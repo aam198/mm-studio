@@ -81,4 +81,16 @@ section.hero{
   flex-direction: column;
   align-items:center;
   justify-content: center;
+  height: 80%;
+  width: 100%;
+  /* Take out for prod */
+  border: 1px solid red;
+}
+
+.explore-button{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10rem;
+  /* Take out for prod */
+  border: 1px solid red;
 }
