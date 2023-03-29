@@ -4,6 +4,8 @@
 :root{
   --dark-blue: #1A3651;
   --light-gray: #EAECEF;
+  --teal: #45C4B0;
+  --purple: #955695;
   --body-text: "Barlow Semi Condensed", sans-serif;
   --heading-text: "chainprinter", sans-serif;
 }
@@ -127,13 +129,60 @@ section.hero{
   text-align: justify;
 }
 
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user .user-image{
+  border-radius: 50%;
+  height: 7.5rem;
+  width: 7.5rem;
+  object-fit: cover;
+}
+
+.user .user-details{
+  margin-left: 1rem;
+}
+
+.user .username{
+  margin: 1rem;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+
+.progress-bar {
+  background-color:var(--teal);
+  height: 4px;
+  width: 100%;
+  /* Box will change every 10 sec */
+  animation: grow 10s linear infinite;
+  /* Positions the animation to start from left */
+  transform-origin: left;
+}
+
+@keyframes grow{
+  0% {
+    transform: scaleX(0);
+  }
+}
 
 @media(max-width: 768px){
   .fa-quote {
     display: none;
   }
   .testimonial-container{
+    max-width: 50vh;
     padding: 1rem 3rem;
+  }
+  .user .role{
+    margin: 2px 0;
   }
   .testimonial{
     line-height: 1.8rem;
