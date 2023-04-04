@@ -1,3 +1,19 @@
+const exploreArrow = document.querySelector('.drop-down');
+const animateArrow=document.querySelector('.animate');
+
+exploreArrow.addEventListener("mouseover", () => {
+  console.log(123);
+  animateArrow.classList.add("more");
+  animateArrow.classList.remove("less");
+});
+
+exploreArrow.addEventListener("mouseout", () => {
+  console.log(123);
+  animateArrow.classList.add("less");
+  animateArrow.classList.remove("more");
+});
+
+
 // Testimonial Section
 const testimonialContainer = document.querySelector('.testimonial-container');
 const testimonial = document.querySelector('.testimonial');

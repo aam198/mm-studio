@@ -35,7 +35,31 @@ h1, h2, h3 ,h4 {
   font-family: var(--heading-text);
   font-weight: 400;
   font-style: normal;
+  color: var(--dark-blue);
 }
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #BAE498;
+}
+
+a:hover {
+}
+
+a:active {
+}
+
 
 nav{
   display: flex;
@@ -45,8 +69,9 @@ nav{
 
 nav > ul{
   display: flex;
-  align-items: space-around;
-  padding: 0 0.7rem;
+  align-items: center;
+  padding: 0 1rem;
+  margin-right: 1rem;
 }
 
 nav > ul > li{
@@ -68,6 +93,50 @@ nav > ul > li:hover{
   transform: scale(1.2);
 }
 
+
+.less{
+  display: inline-block;
+  animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running less;
+}
+.more{
+  margin-left: 5px;
+  display: inline-block;
+  animation: 0.4s 1 normal forwards running more;
+}
+
+@keyframes more{
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes less {
+  0%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.drop-down-two {
+  transition: 0.2s ease-in;
+}
+.drop-down-two:hover > .animate{
+  margin-left: 5px;
+  animation: 0.4s 1 normal forwards running more;
+  scale: 1;
+}
+
+.nav-dropdown{
+  /* Add in dropdown menu */
+  display: none;
+}
+
 nav svg.icon{
   align-items: center;
   width: 1em;
@@ -77,10 +146,12 @@ nav svg.icon{
   overflow: visible;
   display: inline-block;
   margin-left: 5px;
+  margin-top: 5px;
 }
 
 section.hero{
   background-color: var(--light-gray);
+  color: var(--dark-blue);
   margin: 0.7rem 2rem;
   height: 700px;
   border-radius: 1.2rem;
@@ -105,10 +176,23 @@ section.hero{
   display: flex;
   align-self: flex-end;
   margin-right: 10rem;
+  color: var(--dark-blue);
   /* Take out for prod */
-  border: 1px solid red;
+  transition: transform 0.2s ease;
 }
 
+.explore-button:hover{
+  transform: scale(1.2);
+}
+
+.explore-button svg {
+  margin-left: 8px;
+  color: var(--dark-blue);
+}
+
+.animation{
+  transition: all .2s linear;
+}
 
 /* Testimonials Section */
 
