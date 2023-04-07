@@ -3,6 +3,7 @@
 
 :root{
   --dark-blue: #1A3651;
+  --dark-blue-300: #385876;
   --light-gray: #EAECEF;
   --teal: #45C4B0;
   --purple: #955695;
@@ -39,12 +40,10 @@ h1, h2, h3 ,h4 {
 }
 
 a {
-  outline: none;
   text-decoration: none;
 }
 
-a:link {
-}
+
 
 a:visited {
 }
@@ -54,12 +53,9 @@ a:focus {
   background: #BAE498;
 }
 
-a:hover {
-}
 
 a:active {
 }
-
 
 nav{
   display: flex;
@@ -84,7 +80,7 @@ nav > ul > li{
   list-style-type: none;
   padding: 2rem;
   margin: 0;
-  transition: all 2ms ease;
+  transition: transform 2ms ease;
   cursor: pointer;
   align-items:center;
 }
@@ -93,15 +89,10 @@ nav > ul > li:hover{
   transform: scale(1.2);
 }
 
-
-.less{
-  display: inline-block;
-  animation: 0.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0s 1 normal forwards running less;
-}
 .more{
   margin-left: 5px;
   display: inline-block;
-  animation: 0.4s 1 normal forwards running more;
+  animation: 0.2s 1 normal forwards running more;
 }
 
 @keyframes more{
@@ -111,15 +102,6 @@ nav > ul > li:hover{
   
   100% {
     transform: rotate(180deg);
-  }
-}
-
-@keyframes less {
-  0%{
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -154,14 +136,19 @@ section.hero{
   color: var(--dark-blue);
   margin: 0.7rem 2rem;
   height: 700px;
-  border-radius: 1.2rem;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  box-shadow:
+  12.5px 12.5px 17.2px -38px rgba(0, 0, 0, 0.025),
+  100px 100px 137px -38px rgba(0, 0, 0, 0.05);
 }
 
+/* Title-section Styling */
 .title-section{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -169,7 +156,24 @@ section.hero{
   height: 80%;
   width: 100%;
   /* Take out for prod */
-  border: 1px solid red;
+
+}
+
+.title-section h1{
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.title-section h2 {
+  font-size: 1.2em;
+  color:var(--dark-blue-300);
+  letter-spacing: -1px;
+}
+
+.title-section > .dots{
+  position: absolute;
+  bottom: 7rem;
 }
 
 .explore-button{
@@ -186,7 +190,7 @@ section.hero{
 }
 
 .explore-button svg {
-  margin-left: 8px;
+  margin-left: 0.8em;
   color: var(--dark-blue);
 }
 
