@@ -176,10 +176,69 @@ section.hero{
   bottom: 7rem;
 }
 
+button{
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-self: flex-end;
+  font-size: 2rem;
+  margin-right: 10rem;
+  padding: 1rem 1rem;
+  border: none;
+  background: none;
+}
+
+button::before, button::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: var(--dark-blue-300);
+}
+
+.explore-button::before, .explore-button::after{
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: var(--dark-blue-300);
+}
+
+button:hover::before,
+button:hover::after{
+  width: 100%;
+}
+
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+
+.btn-1::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-1 .explore-button::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-1::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-1 .explore-button::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
 .explore-button{
   display: flex;
   align-self: flex-end;
-  margin-right: 10rem;
   color: var(--dark-blue);
   /* Take out for prod */
   transition: transform 0.2s ease;
@@ -197,6 +256,10 @@ section.hero{
 .animation{
   transition: all .2s linear;
 }
+
+
+
+
 
 /* Testimonials Section */
 
