@@ -71,10 +71,9 @@ nav .logo{
   background-image: url('/assets/images/logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 1.2rem;
-  height: 5.5rem;
+  margin-left: 2rem;
+  height: 5.8rem;
   width: 100%;
-
 }
 
 nav > ul{
@@ -143,12 +142,30 @@ nav svg.icon{
   scale: 1;
 }
 
+
+
 .nav-dropdown{
   /* Add in dropdown menu */
-  display: none;
+  display: block;
+  position: absolute;
+  right: 5rem;
+  top: 12rem;
+  height: 100px;
+  width: 30%;
+  background-color: #fff;
+  color: var(--dark-blue);
+  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
 }
 
-
+.nav-dropdown li{
+  list-style: none;
+  color: var(--dark-blue);
+  padding: 1.2rem;
+}
+.dropdown{
+  color: var(--dark-blue);
+  font-family: var(--body-text);
+}
 
 
 /* Navigation Style End */
