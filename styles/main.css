@@ -4,6 +4,8 @@
 :root{
   --dark-blue: #1A3651;
   --dark-blue-300: #385876;
+  --med-blue: #526fa7;  
+  --lt-blue: #93bdea;
   --light-gray: #EAECEF;
   --teal: #45C4B0;
   --purple: #955695;
@@ -82,14 +84,32 @@ nav > ul > li{
   list-style-type: none;
   padding: 1.2rem;
   margin: 1rem;
-  transition: transform 2ms ease;
+  transition: transform .2s ease-in, color 0.3s ease-in;
   cursor: pointer;
   align-items:center;
 }
 
 nav > ul > li:hover{
   transform: scale(1.2);
+  color: var(--lt-blue);
 }
+
+nav svg.icon{
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  line-height: 100%;
+  overflow: visible;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: all 0.3s ease-in;
+}
+
+/* Keep or no */
+/* nav > ul > li:hover svg path{
+  fill: var(--lt-blue);
+} */
 
 .more{
   margin-left: 5px;
@@ -107,9 +127,6 @@ nav > ul > li:hover{
   }
 }
 
-.drop-down-two {
-  transition: 0.2s ease-in;
-}
 .drop-down-two:hover > .animate{
   margin-left: 5px;
   animation: 0.4s 1 normal forwards running more;
@@ -121,17 +138,10 @@ nav > ul > li:hover{
   display: none;
 }
 
-nav svg.icon{
-  align-items: center;
-  width: 1em;
-  height: 1em;
-  font-size: 1em;
-  line-height: 100%;
-  overflow: visible;
-  display: inline-block;
-  margin-left: 5px;
-  margin-top: 5px;
-}
+
+
+
+/* Navigation Style End */
 
 section.hero{
   background-color: var(--light-gray);
@@ -196,7 +206,7 @@ button::before, button::after {
   height: 2px;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--dark-blue-300);
+  background: var(--lt-blue);
 }
 
 .explore-button::before, .explore-button::after{
@@ -205,7 +215,7 @@ button::before, button::after {
   height: 0;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--dark-blue-300);
+  background: var(--lt-blue);
 }
 
 button:hover::before,
@@ -239,6 +249,9 @@ button:hover span::before, button:hover span::after{
 }
 
 .explore-button{
+  font-family:var(--body-text);
+  font-weight: 600;
+  font-size: 2.3rem;
   display: flex;
   align-self: flex-end;
   color: var(--dark-blue);
