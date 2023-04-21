@@ -67,6 +67,16 @@ nav{
   align-items: center;
 }
 
+nav .logo{
+  background-image: url('/assets/images/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 1.2rem;
+  height: 5.5rem;
+  width: 100%;
+
+}
+
 nav > ul{
   display: flex;
   align-items: center;
@@ -272,7 +282,10 @@ button:hover span::before, button:hover span::after{
   transition: all .2s linear;
 }
 
+#logo{
+  height: 50px;
 
+}
 
 
 
