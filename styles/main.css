@@ -151,6 +151,7 @@ nav svg.icon{
   right: 5rem;
   top: 12rem;
   height: 100px;
+  border-radius: 6px;
   width: 30%;
   background-color: #fff;
   color: var(--dark-blue);
