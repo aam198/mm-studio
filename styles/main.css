@@ -51,6 +51,9 @@ a:focus {
   border-bottom: #fff;
 }
 
+:focus-visible{
+  outline: 1px dashed var(--teal);
+}
 
 a:active {
   color: var(--teal);
@@ -74,11 +77,11 @@ nav > ul > li{
   color: #ffffff;
   text-transform: uppercase;
   font-family: var(--body-text);
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 600;
   list-style-type: none;
-  padding: 2rem;
-  margin: 0;
+  padding: 1.2rem;
+  margin: 1rem;
   transition: transform 2ms ease;
   cursor: pointer;
   align-items:center;
