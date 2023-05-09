@@ -149,8 +149,8 @@ nav svg.icon{
   /* Add in dropdown menu */
   display: block;
   position: absolute;
-  top: 12rem;
-  height: 100px;
+  top: 5rem;
+  height: 20rem;
   border-radius: 6px;
   background-color: #fff;
   color: var(--dark-blue);
@@ -301,7 +301,6 @@ button:hover span::before, button:hover span::after{
 
 #logo{
   height: 50px;
-
 }
 
 
@@ -398,4 +397,10 @@ button:hover span::before, button:hover span::after{
     line-height: 1.8rem;
     text-align: justify;
   }
+}
+
+
+.anchoring{
+  height: 100vh;
+  background-color: var(--dark-blue);
 }
