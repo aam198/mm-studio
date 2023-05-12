@@ -1,11 +1,17 @@
-// const exploreArrow = document.querySelector('.drop-down');
-// const animateArrow=document.querySelector('.animate');
+const exploreArrow = document.querySelector('.drop-down');
+const navDrop = document.querySelector('.nav-dropdown');
 
-// exploreArrow.addEventListener("mouseover", () => {
-//   console.log(123);
-//   animateArrow.classList.add("more");
-//   animateArrow.classList.remove("less");
-// });
+const showThemeContainer = () => {
+  navDrop.classList.add("visible");
+};
+
+const hideThemeContainer = () => {
+  navDrop.classList.remove("visible");
+}
+
+exploreArrow.addEventListener("mouseover", () => {
+    showThemeContainer();
+});
 
 // exploreArrow.addEventListener("mouseout", () => {
 //   console.log(123);
