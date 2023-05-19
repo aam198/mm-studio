@@ -73,6 +73,12 @@ nav{
   align-items: center;
 }
 
+nav a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 nav .logo{
   background-image: url('/assets/images/logo.svg');
   background-size: contain;
