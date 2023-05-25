@@ -13,6 +13,10 @@ exploreArrow.addEventListener("mouseover", () => {
     showThemeContainer();
 });
 
+exploreArrow.addEventListener("mouseout", () => {
+  hideThemeContainer();
+});
+
 // exploreArrow.addEventListener("mouseout", () => {
 //   console.log(123);
 //   animateArrow.classList.add("less");
