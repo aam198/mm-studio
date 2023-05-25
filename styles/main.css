@@ -345,7 +345,9 @@ button:hover span::before, button:hover span::after{
 }
 
 /* Footer Section */
-footer.blue{
+footer.grey{
+  background-color:var(--light-gray);
+  margin-top: 10rem;
   width: 100%;
   height: 20vh;
   padding-top: 5rem;
@@ -354,23 +356,35 @@ footer.blue{
   justify-content: space-between
 }
 
-footer.blue h3, footer.blue h4{
-  color: #ffffff;
+footer.grey h3, footer.grey h4{
+  color: var(--dark-blue);
   font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-footer.blue span.contact{
+footer.grey span.contact{
   letter-spacing: 1px;
   font-size: 1.7rem;
   font-family: var(--body-text);
+  color: var(--dark-blue);
+  padding-left: 1rem;
 }
 
-footer.blue ul{
-  color: #ffffff;
+footer.grey ul{
+  color: var(--dark-blue);
   list-style-type: none;
 }
 
-
+.footer-right{
+  margin-left: 0.5rem;
+}
+.footer-right > .menu-nav{
+  margin-right: 7rem;
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
 
 
 /* Testimonials Section */
