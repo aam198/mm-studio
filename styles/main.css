@@ -323,14 +323,27 @@ button:hover span::before, button:hover span::after{
 /* Explore page */
 
 .top-blue {
-  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px));
+  /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
   background-color: var(--dark-blue);
-  height: 50vh;
+  height: auto;
   width: 100%;
   position: relative;
 }
+.top-blue::after {
+  content: '';
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  position: absolute;
+  bottom: -10;
+  z-index: -1;
+  width: 100%;
+  background-color: var(--dark-blue);
+  height: 65%;
+  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+}
 
 .top-blue h2{
+  font-size: 4rem;
   color: var(--light-gray);
   margin: 0;
   padding: 5rem;
@@ -338,11 +351,13 @@ button:hover span::before, button:hover span::after{
   padding-top: 10rem;
 }
 
-.bottom {
-  background-color: var(--light-gray);
-  clip-path: polygon(0 0,100% 100px,100% 100%,0 100%);
-  margin-top: -92px;
+#video{
+  margin-top: 20rem;
+  margin-left: 2rem;
 }
+
+/* Explore page styling end */
+
 
 /* Footer Section */
 footer.grey{
