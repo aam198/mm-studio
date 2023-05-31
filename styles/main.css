@@ -66,6 +66,115 @@ a:active {
   color: var(--teal);
 }
 
+/* Mobile Nav */
+
+.nav > .logo{ 
+  width: 20rem;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.nav-btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.open-btn{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  color: var(--med-blue);
+}
+
+.close-btn{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: var(--med-blue);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.close-btn:hover{
+  opacity: 1;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.visible{
+  transform: translateX(0);
+}
+
+.nav-purple{
+  background-color: var(--purple);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.nav-purple.visible{
+  transition-delay: 0s;
+}
+
+.nav-teal{
+  background-color: var(--teal);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.nav-teal.visible{
+  transition-delay: 0.2s;
+}
+
+.nav-med-blue{
+  background-color: var(--dark-blue);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-med-blue.visible{
+  transition-delay: 0.4s;
+}
+
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px;
+}
+
+.list li a{
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/* End Mobile Nav */
+
 nav{
   background-color: var(--dark-blue);
   display: flex;
