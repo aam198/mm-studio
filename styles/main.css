@@ -104,6 +104,10 @@ a:active {
   z-index: 100;
 }
 
+.hidden{
+  display: none;
+}
+
 .nav.visible{
   transform: translateX(0);
 }
