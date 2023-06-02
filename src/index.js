@@ -32,7 +32,7 @@ function winSize(size) {
   if (size.matches){
     hamburgerNav.classList.add('hidden');
     mainNav.classList.remove('hidden');
-    console.log("Screen is at least 725px")
+    console.log("Screen is wider than 725px")
   }
   else{
     hamburgerNav.classList.remove('hidden');
@@ -42,7 +42,18 @@ function winSize(size) {
 }
 
 // Updates classes when viewport is resized.
-
+window.addEventListener('resize', function() {
+  if (size.matches){
+    hamburgerNav.classList.add('hidden');
+    mainNav.classList.remove('hidden');
+    console.log("Screen is wider than 725px");
+  }
+  else {
+    hamburgerNav.classList.remove('hidden');
+    mainNav.classList.add('hidden');
+    console.log("Screen is less than 725px");
+  }
+})
 // Mobile Navigation open/close buttons
 const openBtn= document.querySelector('.open-btn');
 const closeBtn = document.querySelector('.close-btn');
