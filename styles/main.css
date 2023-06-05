@@ -345,7 +345,7 @@ section.hero{
   bottom: 7rem;
 }
 
-button{
+button.btn-1{
   display: inline-block;
   position: relative;
   display: flex;
@@ -357,7 +357,7 @@ button{
   background: none;
 }
 
-button::before, button::after {
+button.btn-1::before, button.btn-1::after {
   content: "";
   width: 0;
   height: 2px;

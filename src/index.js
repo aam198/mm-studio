@@ -36,7 +36,7 @@ function winSize(size) {
   }
   else{
     hamburgerNav.classList.remove('hidden');
-    mainNav.classList.remove('hidden');
+    mainNav.classList.add('hidden');
     console.log("Screen is less than 725px")
   }
 }
