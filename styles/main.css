@@ -245,10 +245,7 @@ nav svg.icon{
   transition: all 0.3s ease-in;
 }
 
-/* Keep or no */
-/* nav > ul > li:hover svg path{
-  fill: var(--lt-blue);
-} */
+
 
 .more{
   margin-left: 5px;
@@ -265,6 +262,8 @@ nav svg.icon{
     transform: rotate(180deg);
   }
 }
+
+
 
 .drop-down:hover > .animate{
   margin-left: 5px;
@@ -447,14 +446,53 @@ button:hover span::before, button:hover span::after{
   position: relative;
 }
 
+.hex-pattern{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: -100;
+  filter: alpha(opacity=50);
+  opacity: 0.05;
+  --s: 17px; /* control the size */
+  --c:#0000,#1a3651 .5deg 119.5deg,#0000 120deg;
+  --g1:conic-gradient(from  60deg at 56.25% calc(425%/6),var(--c));
+  --g2:conic-gradient(from 180deg at 43.75% calc(425%/6),var(--c));
+  --g3:conic-gradient(from -60deg at 50%   calc(175%/12),var(--c));
+  background:
+    var(--g1),var(--g1) var(--s) calc(1.73*var(--s)),
+    var(--g2),var(--g2) var(--s) calc(1.73*var(--s)),
+    var(--g3) var(--s) 0,var(--g3) 0 calc(1.73*var(--s)) 
+    #93bdea;
+  background-size: calc(2*var(--s)) calc(3.46*var(--s));
+}
+
 .top-blue h2{
   font-size: 4rem;
   color: var(--light-gray);
   margin: 0 auto;
   padding: 5rem;
   text-align: center;
-  padding-top: 10rem;
+  padding-top: 13rem;
   width: 60%;
+}
+
+.fade-in {
+  animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s;
+  -moz-animation: fadeIn ease 4s;
+  -o-animation: fadeIn ease 4s;
+  -ms-animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity:1;
+  }
 }
 
 #video{
