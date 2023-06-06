@@ -496,9 +496,12 @@ nav.explore-nav{
     opacity:1;
   }
 }
-
-.icon-link > i{
-  font-size: 2rem;
+.icon-link {
+  width: 100%;
+}
+.icon-link svg {
+  width: 300px;
+  height: 100px;
 }
 
 #video{
