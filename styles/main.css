@@ -437,7 +437,9 @@ button:hover span::before, button:hover span::after{
 }
 
 /* Explore page */
-
+nav.explore-nav{
+  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+}
 .top-blue {
   clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px));
   background-color: var(--dark-blue);
@@ -478,11 +480,11 @@ button:hover span::before, button:hover span::after{
 }
 
 .fade-in {
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  -moz-animation: fadeIn ease 4s;
-  -o-animation: fadeIn ease 4s;
-  -ms-animation: fadeIn ease 4s;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
 }
 
 @keyframes fadeIn{
@@ -493,6 +495,10 @@ button:hover span::before, button:hover span::after{
   100% {
     opacity:1;
   }
+}
+
+.icon-link > i{
+  font-size: 2rem;
 }
 
 #video{
