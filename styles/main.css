@@ -588,7 +588,7 @@ footer ul{
   display:block;
   position: absolute;
   width: 100%;
-  height: 0.4rem;
+  height: 0.3rem;
 	bottom: -0.5rem;
   /* Gradient */
   background-image: linear-gradient(
