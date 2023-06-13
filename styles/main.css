@@ -329,7 +329,7 @@ section.hero{
   100px 100px 137px -38px rgba(0, 0, 0, 0.05);
 }
 
-/* Title-section Styling */
+/* Main page Title-section Styling */
 .title-section{
   position: absolute;
   display: flex;
@@ -338,8 +338,6 @@ section.hero{
   justify-content: center;
   height: 80%;
   width: 100%;
-  /* Take out for prod */
-
 }
 
 .title-section h1{
@@ -362,8 +360,8 @@ section.hero{
 .image-container {
   position:relative;
   width: 100%;
-  height: auto;
-  opacity: 0.5;
+  height: 100%;
+  opacity: 0.3;
   display: flex;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
@@ -432,9 +430,9 @@ img.carousel-img{
 
 button.btn-1{
   display: inline-block;
-  position: relative;
+  position: absolute;
   display: flex;
-  align-self: flex-end;
+  align-self: end;
   font-size: 2rem;
   margin-right: 10rem;
   padding: 1rem 1rem;
