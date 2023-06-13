@@ -83,6 +83,7 @@ img, video, iframe {
   top: 30px;
   left: 50px;
   color: var(--med-blue);
+  z-index: 100;
 }
 
 .open-btn:hover{
@@ -515,6 +516,17 @@ button:hover span::before, button:hover span::after{
 #logo{
   height: 50px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  button.btn-1 {
+    font-size: 1rem;
+    bottom: 20rem;
+  }
+}
+
+/* Main page styling end */
 
 /* Explore page */
 nav.explore-nav{
