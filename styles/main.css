@@ -70,6 +70,13 @@ a:active {
   color: var(--teal);
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* End of Global Styling */
+
 /* Mobile Nav */
 
 .open-btn{
