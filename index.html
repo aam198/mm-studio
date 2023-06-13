@@ -73,33 +73,25 @@
   </nav>
   <main>
     <section class="hero">
+      <div class="image-container" id="imgs">
+        <img class="carousel-img" src="https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW8lMjBzaG9vdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="first image">
+
+        <img class="carousel-img" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt="second image">
+
+        <img class="carousel-img" src ="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fFVJJTIwZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60" alt=fourth image">
+      </div>
+      <!-- Next/prev buttons -->
+      <a class="prev" id="left" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" id="right" onclick="plusSlides(1)">&#10095;</a>
+        
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
       <div class="title-section">
         <h1>MM Studio</h1>
         <h2>Welcome to our space.</h2>
-        <!-- Images
-        https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW8lMjBzaG9vdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60
-
-        https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60
-
-        https://images.unsplash.com/photo-1581291519195-ef11498d1cf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fFVJJTIwZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60
-
-        https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fFVJJTIwZGVzaWduZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60
-           -->
-        <div class="dots">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="6" viewBox="0 0 54 6">
-          <defs>
-            <clipPath id="clip-path">
-              <rect width="54" height="6" fill="none"/>
-            </clipPath>
-          </defs>
-            <g id="Dots" clip-path="url(#clip-path)">
-              <circle id="Ellipse_8" data-name="Ellipse 8" cx="3" cy="3" r="3" fill="#1a3651"/>
-              <circle id="Ellipse_9" data-name="Ellipse 9" cx="3" cy="3" r="3" transform="translate(16)" fill="#45c4b0"/>
-              <circle id="Ellipse_10" data-name="Ellipse 10" cx="3" cy="3" r="3" transform="translate(32)" fill="#45c4b0"/>
-              <circle id="Ellipse_11" data-name="Ellipse 11" cx="3" cy="3" r="3" transform="translate(48)" fill="#45c4b0"/>
-            </g>
-          </svg>
-        </div>
       </div>
       <button class="btn-1"><a class="explore-button" href="./pages/explore.html">EXPLORE <span><svg class="animation" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
         <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H0V9.039H12.052L6.545,14.545,8,16l8-8Z" fill="#1a3651"/>
@@ -124,5 +116,6 @@
   </footer>
 
   <script src="../src/index.js"></script>
+  <script src="../src/carousel.js"></script>
 </body>
 </html>

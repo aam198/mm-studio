@@ -311,9 +311,9 @@ nav svg.icon{
   font-family: var(--body-text);
 }
 
-
 /* Navigation Style End */
 
+/* Hero Carousel */
 section.hero{
   background-color: var(--light-gray);
   color: var(--dark-blue);
@@ -331,7 +331,7 @@ section.hero{
 
 /* Title-section Styling */
 .title-section{
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -346,17 +346,88 @@ section.hero{
   font-size: 2.2em;
   font-weight: 700;
   margin-bottom: 0;
+  z-index: 100;
 }
 
 .title-section h2 {
+  z-index: 100;
   font-size: 1.2em;
   color:var(--dark-blue-300);
   letter-spacing: -1px;
 }
 
-.title-section > .dots{
+.title-section{
+  overflow: hidden;
+}
+.image-container {
+  position:relative;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+img.carousel-img{
+  display: none;
+  min-width: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 100;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 2rem;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  position: absolute;
+  left: 2rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container{
   position: absolute;
   bottom: 7rem;
+}
+.dot {
+  cursor: pointer;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin: 0 2px;
+  background-color: #45c4b0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #1a3651;
 }
 
 button.btn-1{
