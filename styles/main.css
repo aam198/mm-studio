@@ -35,6 +35,8 @@ body{
   height: 100vh;
   margin: 0;
   padding: 0;
+  /*TODO test out */
+  overflow-x:hidden;
 }
 
 .main{
@@ -141,6 +143,7 @@ img, video, iframe {
   max-width: 480px;
   min-width: 320px;
   transition-delay: 0.4s;
+  z-index:200;
 }
 
 .nav-purple.visible{
@@ -293,6 +296,7 @@ nav svg.icon{
   background-color: #fff;
   color: var(--dark-blue);
   box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+  width: 25rem;
   visibility: hidden;
 }
 
@@ -301,11 +305,12 @@ nav svg.icon{
   animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.nav-dropdown li{
+.nav-dropdown a{
   list-style: none;
   color: var(--dark-blue);
-  padding: 1.2rem;
+  padding: 0.2rem;
 }
+
 .dropdown{
   color: var(--dark-blue);
   font-family: var(--body-text);
@@ -346,11 +351,9 @@ section.hero{
   font-size: 2.2em;
   font-weight: 700;
   margin-bottom: 0;
-  z-index: 100;
 }
 
 .title-section h2 {
-  z-index: 100;
   font-size: 1.2em;
   color:var(--dark-blue-300);
   letter-spacing: -1px;
@@ -371,7 +374,6 @@ section.hero{
 
 img.carousel-img{
   display: none;
-  min-width: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -715,7 +717,7 @@ footer ul{
 	}
 }
 
-/* TODO: For Footer: Add Media Query for min-width: 570px; Adjust font-size & gap */
+
 
 @media only screen and (max-width: 768px) {
   footer h3{
