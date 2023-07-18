@@ -445,7 +445,7 @@ button.btn-1{
 button.btn-1::before, button.btn-1::after {
   content: "";
   width: 0;
-  height: 2px;
+  height: 4px;
   position: absolute;
   transition: all 0.2s linear;
   background: var(--lt-blue);
@@ -497,8 +497,8 @@ button:hover span::before, button:hover span::after{
   display: flex;
   align-self: flex-end;
   color: var(--dark-blue);
-  /* Take out for prod */
   transition: transform 0.2s ease;
+  padding: 0.3rem;
 }
 
 .explore-button:hover{
@@ -668,13 +668,15 @@ footer ul{
 }
 
 .footer-right{
-  margin-left: 0.5rem;
+  margin-left: 3rem;
+  margin-right: 2.5rem;
 }
+
 .footer-right > .menu-nav{
   margin-right: 7rem;
   display: flex;
   width: 50%;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .footer-right > .menu-nav li{
@@ -714,6 +716,17 @@ footer ul{
 }
 
 /* TODO: For Footer: Add Media Query for min-width: 570px; Adjust font-size & gap */
+
+@media only screen and (max-width: 768px) {
+  footer h3{
+    font-size: calc(1.2rem + 1vw);
+  }
+  .footer-right > .menu-nav{
+    gap: 0.5rem;
+  }
+}
+
+
 
 /* Testimonials Section */
 
