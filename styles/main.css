@@ -208,6 +208,7 @@ nav a{
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 nav .logo{
@@ -259,8 +260,6 @@ nav svg.icon{
   transition: all 0.3s ease-in;
 }
 
-
-
 .more{
   margin-left: 5px;
   display: inline-block;
@@ -277,8 +276,7 @@ nav svg.icon{
   }
 }
 
-
-
+/* Navigation  Dropdown  */
 .drop-down:hover > .animate{
   margin-left: 5px;
   animation: 0.4s 1 normal forwards running more;
@@ -296,8 +294,16 @@ nav svg.icon{
   background-color: #fff;
   color: var(--dark-blue);
   box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
-  width: 25rem;
+  width: 15rem;
   visibility: hidden;
+}
+
+.nav-dropdown ul {
+  padding-inline-start: 1rem;
+}
+
+.nav-dropdown > ul > li{
+  padding: 0.3rem 0;
 }
 
 .nav-dropdown.visible{
@@ -306,13 +312,13 @@ nav svg.icon{
 }
 
 .nav-dropdown a{
-  list-style: none;
   color: var(--dark-blue);
   padding: 0.2rem;
 }
 
 .nav-dropdown li{
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(16px  + (19 - 16)*(100vw - 1100px)/(1774 - 1100));
+  /* font-size: calc(0.5rem + 1vw); */
   position:relative;
   display: inline-block;
   transition: scale 0.2ms ease-in;
@@ -325,7 +331,7 @@ nav svg.icon{
   position: absolute;
   width: 100%;
   height: 0.3rem;
-	bottom: -0.5rem;
+	bottom: -0.2rem;
   /* Gradient */
   background-image: linear-gradient(
 		to right,
@@ -566,7 +572,7 @@ nav.explore-nav{
 }
 
 .top-blue {
-  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px));
+  /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
   background-color: var(--dark-blue);
   height: 50rem;
   width: 100%;
@@ -624,9 +630,9 @@ nav.explore-nav{
 }
 .icon-style-container{
   width: 100%;
-  height: 10vh;
   position: absolute;
-  bottom: 10rem;
+  text-align:center;
+  bottom: 5rem;
   z-index: 100;
 }
 
@@ -637,12 +643,12 @@ nav.explore-nav{
 }
 
 .icon-style-container svg {
-  width: 300px;
+  width: 200px;
   height: 100px;
 }
 
 #video{
-  margin-top: 20rem;
+  margin-top: 10rem;
   margin-left: 2rem;
 }
 
@@ -711,13 +717,13 @@ footer ul{
 }
 
 .footer-right > .menu-nav li{
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1.0rem + 1vw);
   position:relative;
   display: inline-block;
   transition: scale 0.2ms ease-in;
 }
 
-.footer-right > .menu-nav li:hover::after, .nav-dropdown li:hover::after{
+.footer-right > .menu-nav li:hover::after{
   --link-color: 102, 153, 255;
   content:"";
   display:block;
