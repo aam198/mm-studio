@@ -634,9 +634,11 @@ nav.explore-nav{
 .icon-style-container{
   width: 100%;
   position: absolute;
-  text-align:center;
   bottom: 10rem;
   z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon-style-container::after{

@@ -4,8 +4,12 @@ const mainNav = document.getElementById('main_nav');
 // Dropdown
 const exploreArrow = document.querySelector('.drop-down');
 const navDrop = document.querySelector('.nav-dropdown');
+//Icon Fade-in
+const iconsFadeIn=document.querySelectorAll('.icon-fade');
 
-// For Dropdown
+
+
+// To add/remove Dropdown on MouseOver/MouseOut
 const showThemeContainer = () => {
   navDrop.classList.add("visible");
 };
@@ -22,8 +26,8 @@ exploreArrow.addEventListener("mouseout", () => {
   hideThemeContainer();
 });
 
-// Mobile Navigation based on viewport
 
+// Mobile Navigation option based on viewport size
 const size = window.matchMedia("(min-width: 725px)");
 // Checks for size when page is loaded
 winSize(size);
@@ -66,3 +70,5 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   navs.forEach(nav => nav.classList.remove('visible'))
 });
+
+// End of Mobile Navigation 
