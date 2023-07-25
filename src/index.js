@@ -5,7 +5,7 @@ const mainNav = document.getElementById('main_nav');
 const exploreArrow = document.querySelector('.drop-down');
 const navDrop = document.querySelector('.nav-dropdown');
 //Icon Fade-in
-const iconsFadeIn=document.querySelectorAll('.icon-fade');
+const iconsFadeIn = document.querySelectorAll('.icon-fade');
 
 
 
@@ -17,11 +17,10 @@ const showThemeContainer = () => {
 const hideThemeContainer = () => {
   navDrop.classList.remove("visible");
 }
-
+// Event listener for MouseOver/MouseOut
 exploreArrow.addEventListener("mouseover", () => {
     showThemeContainer();
 });
-
 exploreArrow.addEventListener("mouseout", () => {
   hideThemeContainer();
 });
@@ -72,3 +71,9 @@ closeBtn.addEventListener('click', () => {
 });
 
 // End of Mobile Navigation 
+
+window.onload = (event) => {
+  iconsFadeIn.forEach((icon) => {
+    icon.classList.add('icon-fade-in');
+  });
+};
