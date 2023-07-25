@@ -85,31 +85,16 @@ nav.explore-nav{
   height: 100px;
 }
 
-/* TODO: tighten up animation */
 .icon-fade-in {
-  animation: icon-fadeIn ease 3s;
-  -webkit-animation: icon-fadeIn ease 3s;
-  -moz-animation: icon-fadeIn ease 3s;
-  -o-animation: icon-fadeIn ease 3s;
-  -ms-animation: icon-fadeIn ease 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes icon-fadeIn{
-  0% {
-    opacity:0;
-    transform: translateY(100%);
-  }
-  25% {
-    opacity: 0;
-  }
-  50%{
-    opacity: 0.50;
-  }
-  100% {
-    opacity:1;
-  }
+.icon-fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
-
 
 #video-section{
   margin-top: 6rem;

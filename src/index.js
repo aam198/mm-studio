@@ -5,7 +5,7 @@ const mainNav = document.getElementById('main_nav');
 const exploreArrow = document.querySelector('.drop-down');
 const navDrop = document.querySelector('.nav-dropdown');
 //Icon Fade-in
-const iconsFadeIn = document.querySelectorAll('.icon-fade');
+const icons = document.querySelectorAll('.icon-fade');
 
 
 
@@ -72,8 +72,23 @@ closeBtn.addEventListener('click', () => {
 
 // End of Mobile Navigation 
 
-window.onload = (event) => {
-  iconsFadeIn.forEach((icon) => {
-    icon.classList.add('icon-fade-in');
-  });
+const showIconsOneByOne = () => {
+  setTimeout(() => {
+    for (let i = 0; i < icons.length; i++){
+      setTimeout(() => {
+        icons[i].style.opacity='1';
+      }, 1000 * i);
+    }
+  }, 1000);
 };
+
+showIconsOneByOne();
+
+
+// window.onload = (event) => {
+//   iconsFadeIn.forEach((icon) => {
+//     setTimeout(() => {
+//       icon.classList.add('icon-fade-in');
+//     }, 800);
+//   });
+// };
