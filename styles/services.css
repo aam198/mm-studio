@@ -1,0 +1,157 @@
+
+/* Explore page */
+nav.explore-nav{
+  position: sticky;
+  top: 0;
+  /* box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5); */
+}
+
+.top-blue {
+  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+  /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
+  background-color: var(--dark-blue);
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  z-index: -100;
+}
+
+.hex-pattern{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: -100;
+  filter: alpha(opacity=50);
+  opacity: 0.05;
+  --s: 17px; /* control the size */
+  --c:#0000,#1a3651 .5deg 119.5deg,#0000 120deg;
+  --g1:conic-gradient(from  60deg at 56.25% calc(425%/6),var(--c));
+  --g2:conic-gradient(from 180deg at 43.75% calc(425%/6),var(--c));
+  --g3:conic-gradient(from -60deg at 50%   calc(175%/12),var(--c));
+  background:
+    var(--g1),var(--g1) var(--s) calc(1.73*var(--s)),
+    var(--g2),var(--g2) var(--s) calc(1.73*var(--s)),
+    var(--g3) var(--s) 0,var(--g3) 0 calc(1.73*var(--s)) 
+    #93bdea;
+  background-size: calc(2*var(--s)) calc(3.46*var(--s));
+}
+
+.top-blue h1{
+  font-size: 4rem;
+  color: var(--light-gray);
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: center;
+  padding-top: 8rem;
+  width: 60%;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity:1;
+  }
+}
+.icon-style-container{
+  width: 100%;
+  position: absolute;
+  bottom: 8rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon-style-container::after{
+  content: '';
+  position: absolute;
+  bottom:0;
+}
+
+.icon-style-container svg {
+  width: 175px;
+  height: 100px;
+}
+
+/* TODO: tighten up animation */
+.icon-fade-in {
+  animation: icon-fadeIn ease 3s;
+  -webkit-animation: icon-fadeIn ease 3s;
+  -moz-animation: icon-fadeIn ease 3s;
+  -o-animation: icon-fadeIn ease 3s;
+  -ms-animation: icon-fadeIn ease 3s;
+}
+
+@keyframes icon-fadeIn{
+  0% {
+    opacity:0;
+    transform: translateY(100%);
+  }
+  25% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.50;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+#video-section{
+  margin-top: 6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  position: relative;
+}
+
+.services h2{
+  position: relative
+}
+
+.video-section h2::before, .design-section h2::before{
+  content: "";
+  height: 5px;
+  background: var(--lt-blue);
+  position: absolute;
+  width: 25%;
+  bottom: -10px;
+  z-index: -1;
+  transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
+}
+
+.design-section h2::before{
+  width: 10%;
+}
+
+/* TODO: Media Queries for Explore page */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .top-blue{
+    height: 40rem;
+  }
+  .top-blue h1{
+    font-size: 3rem;
+    width: 100%;
+  }
+  .icon-style-container svg {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+/* Services page styling end */
