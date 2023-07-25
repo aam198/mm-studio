@@ -118,6 +118,11 @@ nav.explore-nav{
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
 }
 
+.video-example{
+  padding-top: 2rem;
+}
+
+
 .design-section h2::before{
   width: 10%;
 }
