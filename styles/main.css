@@ -77,7 +77,7 @@ a:active {
   color: var(--teal);
 }
 
-img, video, iframe {
+img, video {
   max-inline-size: 100%;
   block-size: auto;
 }
