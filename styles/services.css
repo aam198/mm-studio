@@ -1,3 +1,6 @@
+:root{
+  --responsive-font-size-primary: min(1.8rem, max(0.5rem, 5vmin));
+}
 
 /* Explore page */
 nav.explore-nav{
@@ -122,6 +125,10 @@ nav.explore-nav{
 .video-example{
   position:relative;
   padding-top: 2rem;
+}
+
+.video-section p{
+  font-size: calc(1rem + 1vw);
 }
 
 
