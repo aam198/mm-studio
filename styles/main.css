@@ -313,7 +313,7 @@ nav svg.icon{
 }
 
 .nav-dropdown > ul > li{
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }
 
 .nav-dropdown.visible{
@@ -322,8 +322,7 @@ nav svg.icon{
 }
 
 .nav-dropdown li{
-  font-size: calc(16px  + (19 - 16)*(100vw - 1100px)/(1774 - 1100));
-  /* font-size: calc(0.5rem + 1vw); */
+  font-size: 1.8rem;
   position:relative;
   display: inline-block;
   transition: scale 0.2ms ease-in;
