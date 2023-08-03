@@ -11,10 +11,10 @@ nav.explore-nav{
 }
 
 .top-blue {
-  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+  box-shadow: 0 0 0.3rem rgb(76, 66, 76, 0.5);
   /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
   background-color: var(--dark-blue);
-  height: 50rem;
+  height: 32rem;
   width: 100%;
   position: relative;
   z-index: -100;
@@ -42,12 +42,11 @@ nav.explore-nav{
 }
 
 .top-blue h1{
-  font-size: 4rem;
+  font-size: 2.6rem;
   color: var(--light-gray);
   margin: 0 auto;
-  padding: 5rem;
+  padding: 4rem;
   text-align: center;
-  padding-top: 8rem;
   width: 60%;
 }
 
@@ -71,7 +70,7 @@ nav.explore-nav{
 .icon-style-container{
   width: 100%;
   position: absolute;
-  bottom: 8rem;
+  bottom: 5rem;
   z-index: 100;
   display: flex;
   flex-direction: row;
@@ -86,7 +85,7 @@ nav.explore-nav{
 
 .icon-style-container svg {
   width: 175px;
-  height: 100px;
+  height: 90px;
 }
 
 .icon-fade-in {
@@ -101,39 +100,40 @@ nav.explore-nav{
 }
 
 #video-section{
-  margin-top: 6rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   position: relative;
 }
 
-.services h2{
-  position: relative
+.services h2 {
+  position: relative;
 }
 
 .video-section h2::before, .design-section h2::before{
   content: "";
-  height: 5px;
-  background: var(--lt-blue);
   position: absolute;
-  width: 25rem;
-  bottom: -10px;
+  width: 20rem;
+  height: 5px;
+  transform-origin: bottom;
+  background: var(--lt-blue);
+  bottom: -8px;
   z-index: -1;
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
 }
 
 .video-example{
   position:relative;
-  padding-top: 2rem;
+  padding-top: 1.8rem;
 }
 
 .video-section p{
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1rem + 0.5vw);
 }
 
 
 .design-section h2::before{
-  width: 10%;
+  width: 9rem;
 }
 
 /* TODO: Media Queries for Explore page */
@@ -141,16 +141,27 @@ nav.explore-nav{
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .top-blue{
-    height: 40rem;
+    height: 30rem;
   }
   .top-blue h1{
-    font-size: 3rem;
+    padding-top: 7rem;
+    font-size: 2rem;
     width: 100%;
   }
   .icon-style-container svg {
     width: 100px;
     height: 50px;
   }
+  .video-section h2 {
+    font-size: 1.953rem;
+  }
+  .video-section h3 {
+    font-size: 1.563rem;
+  }
+  .video-section h2::before {
+    width: 16rem;
+  }
+
 }
 
 /* Services page styling end */
