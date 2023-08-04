@@ -85,6 +85,16 @@ const showIconsOneByOne = () => {
 showIconsOneByOne();
 
 
+// Media Scroller
+import {rovingIndex} from "https://cdn.skypack.dev/roving-ux"
+
+document.querySelectorAll('.horizontal-media-scroller')
+  .forEach(scroller => rovingIndex({
+    element: scroller,
+    target: 'a',
+  }))
+
+
 // window.onload = (event) => {
 //   iconsFadeIn.forEach((icon) => {
 //     setTimeout(() => {
