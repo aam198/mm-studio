@@ -6,7 +6,8 @@
   --dark-blue-300: #385876;
   --med-blue: #526fa7;  
   --lt-blue: #93bdea;
-  --light-gray: #EAECEF;
+  --gray-100: #EAECEF; 
+  --gray-200: #dee2e6;
   --teal: #45C4B0;
   --purple: #955695;
 
@@ -196,7 +197,7 @@ img, video {
 }
 
 .list li a{
-  color: #ffffff;
+  color: #f8f9fa;
   opacity: 0.9;
   font-size: 1.2rem;
   text-decoration: none;
@@ -243,8 +244,10 @@ nav > ul{
 
 nav > ul > li{
   display: flex;
-  color: #ffffff;
+  color: var(--gray-100);
+  /* color: #f8f9fa; */
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-family: var(--body-text);
   font-size: 1.2rem;
   font-weight: 600;
@@ -318,6 +321,7 @@ nav svg.icon{
 
 .nav-dropdown > ul > li{
   padding: 0.3rem 0;
+  letter-spacing: 0;
 }
 
 .nav-dropdown.visible{
@@ -364,7 +368,7 @@ nav svg.icon{
 /* Hero Carousel */
 section.hero{
   position:relative;
-  background-color: var(--light-gray);
+  background-color: var(--gray-100);
   color: var(--dark-blue);
   margin: 0.7rem 2rem;
   height: 700px;
@@ -452,7 +456,7 @@ img.carousel-img{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: var(--med-blue);
-  color: var(--light-gray);
+  color: var(--gray-100);
 }
 
 .dot-container{
@@ -597,11 +601,11 @@ footer h3{
 
 footer.grey{
   color: var(--dark-blue);
-  background-color: var(--light-gray);
+  background-color: var(--gray-100);
 }
 
 footer.blue{
-  color: var(--light-gray);
+  color: var(--gray-100);
   background-color: var(--dark-blue);
 }
 
@@ -683,7 +687,7 @@ footer ul{
 
 .testimonial-container{
   color: var(--dark-blue);
-  background-color: var(--light-gray);
+  background-color: var(--gray-200);
   border-radius: 1rem;
   margin: 1.2rem auto;
   padding: 5rem 8rem;

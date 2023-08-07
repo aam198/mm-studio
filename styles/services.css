@@ -43,7 +43,7 @@ nav.explore-nav{
 
 .top-blue h1{
   font-size: 2.6rem;
-  color: var(--light-gray);
+  color: var(--gray-100);
   margin: 0 auto;
   padding: 4rem;
   text-align: center;
@@ -198,6 +198,26 @@ nav.explore-nav{
 .media-scroller{
   --size-3: 1rem;
   --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  padding: 0 var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-element{
+  --shadow-color: 220 40% 2%;
+  --shadow-strength: 10%;
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--dark-blue);
+  color: var(--gray-100);
+  border-radius: 5px;
+  box-shadow: 0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%));
 }
 
 /* End Media Scroller */
