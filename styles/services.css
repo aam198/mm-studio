@@ -130,8 +130,9 @@ nav.explore-nav{
 .video-section p{
   font-size: calc(1rem + 0.5vw);
 }
-/* Media Scroller */
 
+
+/* Media Scroller */
 
 .horizontal-media-scroller {
   --size: 150px;
@@ -192,8 +193,18 @@ nav.explore-nav{
   transition: outline-offset .25s ease;
 }
 
+/* Second Media Scroller */
+
+.media-scroller{
+  --size-3: 1rem;
+  --_spacer: var(--size-3);
+}
 
 /* End Media Scroller */
+
+.design-section{
+  padding-top: 1.5rem;
+}
 
 .design-section h2::before{
   width: 9rem;
