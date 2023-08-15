@@ -201,7 +201,7 @@ nav.explore-nav{
   display: grid;
   gap: var(--_spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 21%;
+  grid-auto-columns: 52%;
   padding: 0 var(--_spacer) var(--_spacer);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
