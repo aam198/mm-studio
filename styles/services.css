@@ -201,7 +201,8 @@ nav.explore-nav{
   display: grid;
   gap: var(--_spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 52%;
+  /* Took out to be able to control width of each card */
+  /* grid-auto-columns: 52%; */
   padding: 0 var(--_spacer) var(--_spacer);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -218,12 +219,22 @@ nav.explore-nav{
   color: var(--gray-100);
   border-radius: 5px;
   box-shadow: 0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%));
+  max-width: 615px;
+  /* Must have for video or bring grid-auto-columns: 52%; back in on main element */
+  min-width: 615px;
 }
 
 .media-element > img {
   inline-size: 100%;
   aspect-ratio: 16 /9;
   object-fit: cover;
+}
+
+.media-element > iframe {
+  inline-size: 100%;
+}
+.media-element > iframe ~ p{
+  margin-top: 0;
 }
 
 .snaps-inline{
