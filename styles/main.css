@@ -33,18 +33,20 @@ body{
   font-size: 1.2rem;
   /* font-size: calc(1rem + 0.8vw);  */
   font-family: var(--body-text);
-  /* background-color: var(--dark-blue); */
   /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
   margin: 0;
   padding: 0;
+  min-height:100vh;
   /* overflow-x:hidden; */
 }
 
-.main{
+body.main{
   background-color: var(--dark-blue);
+  min-height:150vh;
+  position: relative;
 }
 
 h1, h2, h3 ,h4 {
@@ -586,11 +588,14 @@ button:hover span::before, button:hover span::after{
 footer{
   margin-top: 2rem;
   width: 100%;
-  height: 20vh;
+  height: 16vh;
   padding-top: 2.5rem;
   padding-left: 2.5rem;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  position:absolute;
+  bottom:0;
+  
 }
 
 footer h3{
