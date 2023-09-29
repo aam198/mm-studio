@@ -235,16 +235,9 @@ nav{
   width: 100%;
 }
 
-nav a{
-  width: 20%;
-  display: flex;
-  align-items: center;
-}
+
 
 nav .logo{
-  background-image: url('/assets/images/WCLD.png');
-  background-size: contain;
-  background-repeat: no-repeat;
   margin-left: 2rem;
   height: 3.8rem;
   width: 100%;
