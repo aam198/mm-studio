@@ -239,15 +239,15 @@ nav{
 
 nav .logo{
   margin-left: 2rem;
-  height: 3.8rem;
-  width: 70%;
+  padding: 2rem 0;
+  width: 25%;
 }
 
 nav > ul{
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 60%;
+  width: 75%;
   padding: 0 0.5rem;
   margin-right: 1rem;
   z-index: 10;
@@ -256,14 +256,13 @@ nav > ul{
 nav > ul > li{
   display: flex;
   color: var(--grey-100);
-  /* color: #f8f9fa; */
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: var(--body-text);
   font-size: 1.2rem;
   font-weight: 600;
   list-style-type: none;
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
   transition: transform .2s ease-in, color 0.3s ease-in;
   cursor: pointer;
