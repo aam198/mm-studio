@@ -58,7 +58,7 @@ body{
 }
 
 body.main{
-  background-color: var(--dark-blue-500);
+  background-color: var(--grey-100);
   min-height:150vh;
   position: relative;
 }
