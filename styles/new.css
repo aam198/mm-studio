@@ -85,9 +85,6 @@ a:focus {
   border-bottom: #fff;
 }
 
-:focus-visible{
-  outline: 1px dashed var(--teal);
-}
 
 a:active {
   color: var(--teal);
@@ -106,15 +103,6 @@ img, video {
 
 
 
-
-nav > ul > li > a{
-  width: 100%;
-}
-
-nav > ul > li:hover{
-  transform: scale(1.2);
-  color: var(--lt-blue);
-}
 
 nav svg.icon{
   width: 1rem;
