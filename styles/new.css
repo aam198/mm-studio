@@ -237,25 +237,6 @@ nav{
 
 
 
-nav .logo{
-  margin-left: 2rem;
-  height: 3.8rem;
-  width: 100%;
-}
-
-nav > ul{
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0 0.5rem;
-  margin-right: 1rem;
-  z-index: 10;
-}
-
-.block{
-  display: block;
-}
-
 nav > ul > li{
   display: flex;
   color: var(--dark-blue);

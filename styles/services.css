@@ -13,7 +13,7 @@ nav.explore-nav{
 .top-blue {
   box-shadow: 0 0 0.3rem rgb(76, 66, 76, 0.5);
   /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
-  background-color: var(--dark-blue);
+  background-color: var(--dark-blue-500);
   height: 32rem;
   width: 100%;
   position: relative;
@@ -155,7 +155,7 @@ nav.explore-nav{
   grid-template-rows: min-content;
   gap: var(--_spacer);
   padding: var(--_spacer);
-  background: var(--dark-blue);
+  background: var(--dark-blue-500);
   color: var(--gray-100);
   border-radius: 5px;
   box-shadow: 0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%));
