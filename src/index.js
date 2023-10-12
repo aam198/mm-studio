@@ -27,7 +27,7 @@ exploreArrow.addEventListener("mouseout", () => {
 
 
 // Mobile Navigation option based on viewport size
-const size = window.matchMedia("(min-width: 835px)");
+const size = window.matchMedia("(min-width: 850px)");
 // Checks for size when page is loaded
 winSize(size);
 

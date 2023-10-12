@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 @import url("https://use.typekit.net/oio2onf.css");
 
+/* General */
 :root{
   --grey-100: #EAECEF; 
   --grey-200: #dee2e6;
@@ -39,13 +40,12 @@ body{
   justify-content: center; */
   margin: 0;
   padding: 0;
-  min-height:100vh;
+  /* max-height:100vh; */
   /* overflow-x:hidden; */
 }
 
 body.main{
   background-color: var(--grey-100);
-  min-height:150vh;
   position: relative;
 }
 
@@ -402,7 +402,7 @@ section.hero{
   position:relative;
   background-color: var(--grey-100);
   color: var(--dark-blue-500);
-  margin: 0.7rem 2rem;
+  margin: 0.7rem 4rem;
   height: 700px;
   border-radius: 8px;
   display: flex;
@@ -602,6 +602,10 @@ button:hover span::before, button:hover span::after{
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+
+  section.hero{
+    margin: 6rem 2rem;
+  }
   button.btn-1 {
     bottom: 1rem;
     margin-right: 1rem;
@@ -624,9 +628,6 @@ footer{
   padding-left: 2.5rem;
   display: flex;
   justify-content: space-between;
-  position:absolute;
-  bottom:0;
-  
 }
 
 footer h3{
@@ -811,38 +812,4 @@ footer ul{
     line-height: 1.8rem;
     text-align: justify;
   }
-}
-
-/* Widget Styling */
-.useful-links-widget {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-.useful-links-widget-toggle{
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.useful-links-widget-links{
-  display: none;
-  position: absolute;
-  bottom: 60px;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.useful-links-widget-links a{
-  display: block;
-  margin-bottom: 10px;
-  color: #333;
-  text-decoration: none;
 }
