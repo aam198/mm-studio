@@ -35,12 +35,12 @@ function winSize(size) {
   if (size.matches){
     hamburgerNav.classList.add('hidden');
     mainNav.classList.remove('hidden');
-    console.log("Screen is wider than 725px")
+    console.log("Screen is wider than 850px")
   }
   else{
     hamburgerNav.classList.remove('hidden');
     mainNav.classList.add('hidden');
-    console.log("Screen is less than 725px")
+    console.log("Screen is less than 850px")
   }
 }
 

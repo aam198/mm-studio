@@ -10,12 +10,15 @@
   
 </head>
 <body class="main">
-  <!-- Mobile Nav -->
+
+  <header>
+    <!-- Mobile Nav -->
   <div id="hamburger_nav" class="hidden" aria-label="Mobile menu">
     <button class="nav-btn open-btn">
       <i class="fas fa-bars"></i>
     </button>
   </div>
+
   <div class="nav nav-purple">
     <div class="nav nav-teal">
       <div class="nav nav-med-blue">
@@ -23,7 +26,6 @@
           <i class="fas fa-times"></i>
         </button>
         <img src="./assets/images/logo.svg" alt="Logo" class="logo">
-        
         <ul class="list">
           <li><a href="#">EXPLORE</a></li>
           <li>
@@ -55,25 +57,31 @@
     </div>
   </div>
   <!-- End Mobile Nav -->
-
+  <!-- Logo -->
+  <a href="#" tabindex="0">
+    <img class="wc-logo" src="/assets/images/PSU_Logo_blue.png" alt="Penn State World Campus Logo" /></a>
   <nav id="main_nav">
-    <div class="logo"><a href="#"><img src="/assets/images/WCLD.png" alt="WCLD MM studio" /></a></div>
-    <ul>
-      <li><a href="pages/services.html">What We Do</a></li>
-      <li class="drop-down"><a href="pages/portfolio.html">Portfolio <span class="animate less"><svg  aria-hidden="true" tabindex="-1" role="presentation" class="animation icon icon-arrow-down down-arrow" viewBox="0 0 32 32"><path fill="#1A3651" d="M26.985,8.5l1.516,1.617L16.001,23.5l-12.5-13.383L5.009,8.5l10.992,11.758L26.985,8.5z"></path></svg></span></a>
-        <div class="nav-dropdown" tabindex="0">
-          <ul>
-            <li><a href="pages/portfolio.html#video">Video & Audio</a></li>
-            <li><a href="pages/portfolio.html#design">Visual Design</a></li>
-            <li><a href="pages/portfolio.html#interactive">Interactive</a></li>
-            <li><a href="pages/portfolio.html#immersive">Immersive</a></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="pages/resources.html">Resources</a></li>
-      <li class="drop-down-two"><a href="./pages/about.html">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="logo">
+      <a href="#"><img src="/assets/images/PSU_Logo_blue.png" alt="WCLD MM Studio Logo" /></a>
+      <a href="#"><img src="/assets/images/WCLD.png" alt="WCLD MM studio" /></a>
+      </div>
+      <ul>
+        <li><a href="pages/services.html">What We Do</a></li>
+        <li class="drop-down"><a href="pages/portfolio.html">Portfolio <span class="animate less"><svg  aria-hidden="true" tabindex="-1" role="presentation" class="animation icon icon-arrow-down down-arrow" viewBox="0 0 32 32"><path fill="#1A3651" d="M26.985,8.5l1.516,1.617L16.001,23.5l-12.5-13.383L5.009,8.5l10.992,11.758L26.985,8.5z"></path></svg></span></a>
+          <div class="nav-dropdown" tabindex="0">
+            <ul>
+              <li><a href="pages/portfolio.html#video">Video & Audio</a></li>
+              <li><a href="pages/portfolio.html#design">Visual Design</a></li>
+              <li><a href="pages/portfolio.html#interactive">Interactive</a></li>
+              <li><a href="pages/portfolio.html#immersive">Immersive</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="pages/resources.html">Resources</a></li>
+        <li class="drop-down-two"><a href="./pages/about.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <section class="hero">
       <div class="carousel-container" id="carousel-imgs" role="region" aria-label="carousel">
