@@ -7,6 +7,7 @@ nav.explore-nav{
   position: sticky;
   top: 0;
   z-index: 10;
+  padding-bottom:1rem;
   /* box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5); */
 }
 
@@ -129,6 +130,7 @@ nav.explore-nav{
 
 .video-section p{
   font-size: calc(1rem + 0.5vw);
+  color: var(--grey-100);
 }
 
 
