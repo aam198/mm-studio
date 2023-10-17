@@ -2,6 +2,10 @@
   --responsive-font-size-primary: min(1.8rem, max(0.5rem, 5vmin));
 }
 
+h2{
+  font-size: 3rem;
+}
+
 /* Explore page */
 nav.explore-nav{
   position: sticky;
@@ -100,21 +104,27 @@ nav.explore-nav{
   transition: opacity 1s ease-in-out;
 }
 
-#video-section{
-  margin-top: 4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+/* Video and Audio Section */
+
+
+.video-section{
+  max-width: 1440px;
+  padding-top: 2rem;
+  margin-left: 3.25rem;
+  margin-right: 3.25rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+section h2, section h3 {
   position: relative;
 }
 
-.services h2 {
-  position: relative;
-}
-
-.video-section h2::before, .design-section h2::before{
+.video-section h3::before {
   content: "";
   position: absolute;
-  width: 20rem;
+  width: 17rem;
   height: 5px;
   transform-origin: bottom;
   background: var(--lt-blue);
@@ -123,17 +133,24 @@ nav.explore-nav{
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
 }
 
-.video-example{
-  position:relative;
-  padding-top: 1.8rem;
+.video-text{
+  width: 40%;
+  padding-right: 2rem;
+}
+.video-text h3{
+  margin:0;
+}
+.video-text p{
+  margin-top: 2rem;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2.0625rem;
 }
 
 .video-example img{
+  width: 100%;
   border-radius: 18px;
-}
-
-.video-section p{
-  font-size: 1.2rem;
+  min-width: 500px;
 }
 
 
