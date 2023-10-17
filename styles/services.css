@@ -121,7 +121,7 @@ section h2, section h3 {
   position: relative;
 }
 
-.video-section h3::before {
+.video-section h3::before, .design-section h3::before {
   content: "";
   position: absolute;
   width: 17rem;
@@ -147,89 +147,19 @@ section h2, section h3 {
   line-height: 2.0625rem;
 }
 
-.video-example img{
+.video-image img{
   width: 100%;
   border-radius: 18px;
   min-width: 500px;
 }
 
 
-/* Media Scroller */
-
-.media-scroller{
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);
-  --size-3: 1rem;
-  --_spacer: var(--size-3);
-  display: grid;
-  gap: var(--_spacer);
-  grid-auto-flow: column;
-  /* Took out to be able to control width of each card */
-  /* grid-auto-columns: 52%; */
-  padding: var(--_spacer);
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-}
-
-.media-element{
-  --shadow-color: 220 40% 2%;
-  --shadow-strength: 10%;
-  display: grid;
-  grid-template-rows: min-content;
-  gap: var(--_spacer);
-  padding: var(--_spacer);
-  background: var(--dark-blue-500);
-  color: var(--grey-100);
-  border-radius: 5px;
-  box-shadow: 0 3px 5px -2px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 3%)),0 7px 14px -5px hsl(var(--shadow-color)/calc(var(--shadow-strength) + 5%));
-  max-width: 615px;
-  /* Must have for video or bring grid-auto-columns: 52%; back in on main element */
-  min-width: 615px;
-}
-
-.media-element > img {
-  inline-size: 100%;
-  aspect-ratio: 16 /9;
-  object-fit: cover;
-}
-
-.media-element > iframe {
-  inline-size: 100%;
-}
-.media-element > iframe ~ p{
-  margin:0;
-}
-
-.media-element > .sub-title{
-  font-size: 1.15rem;
-  padding-left: 0.5rem;
-}
-
-.snaps-inline{
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_spacer, 1rem);
-}
-
-.snaps-inline > * {
-  scroll-snap-align: start;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  transition: outline-offset .25s ease;
-}
-
-/* End Media Scroller */
-
 .design-section{
   padding-top: 1.5rem;
 }
 
-.design-section h2::before{
-  width: 9rem;
+.design-section h3::before{
+  width: 7.8rem;
 }
 
 /* TODO: Media Queries for Explore page */
