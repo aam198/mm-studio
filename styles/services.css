@@ -6,6 +6,14 @@ h2{
   font-size: 3rem;
 }
 
+.box-shadow-right{
+  box-shadow: 11px 11px rgba(52, 52, 52, .1);
+}
+
+.box-shadow-left{
+  box-shadow: 11px 11px rgba(52, 52, 52, .1);
+}
+
 /* What We Do page */
 nav.explore-nav{
   position: sticky;
@@ -157,6 +165,7 @@ section h2, section h3 {
   min-width: 500px;
 }
 
+
 .design-section{
   padding-top: 5rem;
 }
@@ -184,13 +193,16 @@ button.view-more{
   font-family: var(--body-text);
   cursor: pointer;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s;
+  transition: all .32s cubic-bezier(.19, 1, .22, 1);
+  /* -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
-	transition: all 0.4s ease;
+	transition: all 0.4s ease; */
 }
 
 button.view-more:hover{
-  box-shadow: none;
+  transform: translate(0, -5px);
+  box-shadow: 9px 9px 4px rgba(78, 93, 120, .32);
+  /* box-shadow: none; */
   background-position: 100% 0;
   transition: all 0.4s ease;
   /* background-color: var(--lt-blue); */
