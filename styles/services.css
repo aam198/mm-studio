@@ -2,7 +2,7 @@
   --responsive-font-size-primary: min(1.8rem, max(0.5rem, 5vmin));
 }
 
-h2{
+h2.title{
   font-size: 3rem;
 }
 
