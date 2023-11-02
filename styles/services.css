@@ -114,7 +114,13 @@ nav.explore-nav{
 
 /* Video and Audio Section */
 
-
+/* Example with a border around each service  */
+.service-card{
+  display: flex;
+  justify-content: center;
+  /* temporary */
+  border: 1px solid red;
+}
 .video-section, .design-section{
   max-width: 1440px;
   padding-top: 2rem;
