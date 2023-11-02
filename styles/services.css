@@ -115,7 +115,10 @@ nav.explore-nav{
 /* Video and Audio Section */
 
 /* Example with a border around each service  */
+
+/* TODO: Want image to be aligned with text and button -evenly */
 .service-card{
+  width: 90%;
   display: flex;
   justify-content: center;
   /* temporary */
