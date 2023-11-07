@@ -11,7 +11,7 @@ h2.title{
 }
 
 .box-shadow-left{
-  box-shadow: 11px 11px rgba(52, 52, 52, .1);
+  box-shadow: -11px 11px rgba(52, 52, 52, .1);
 }
 
 /* What We Do page */
@@ -212,7 +212,7 @@ section h2, section h3 {
 
 a.view-more:hover{
   transform: translate(0, -5px);
-  box-shadow: 9px 9px 4px rgba(78, 93, 120, .32);
+  box-shadow: 0px 9px 4px rgba(78, 93, 120, .32);
   /* box-shadow: none; */
   background-position: 100% 0;
   transition: all 0.4s ease;
