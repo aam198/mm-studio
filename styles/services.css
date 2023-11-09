@@ -112,38 +112,37 @@ nav.explore-nav{
   transition: opacity 1s ease-in-out;
 }
 
-/* Video and Audio Section */
+/* Services Listed Section */
 
 /* Example with a border around each service  */
 
-/* TODO: Want image to be aligned with text and button -evenly */
 .service-card{
   width: 90%;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   border: 1px solid #e2e8f0;
   border-radius: .5rem;
-  padding: 1.75rem;
+  padding: 1.75rem 1.875rem;
+  gap: 1.5rem;
 }
+
 .video-section, .design-section{
-  max-width: 1440px;
   padding-top: 2rem;
-  /* If we keep content in center */
-  /* margin-left: 3.25rem;
-  margin-right: 3.25rem; */
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* need for underline */
-section h2, section h3 {
+section h3.service-card-title {
   position: relative;
   width: max-content;
 }
 
-.video-section-title::before, .design-section-title::before{
+.service-card-title::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -155,11 +154,10 @@ section h2, section h3 {
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
 }
 
-.video-text {
+.service-card-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-right: 2rem;
+  justify-content: space-around;
 }
 
 .video-text h3, .design-text h3{
@@ -167,7 +165,6 @@ section h2, section h3 {
 }
 
 .video-text p, .design-text p{
-  margin-top: 2rem;
   display: block;
   font-size: 1.2rem;
   line-height: 2.0625rem;
@@ -185,7 +182,7 @@ section h2, section h3 {
 
 .design-text {
   width: 40%;
-  padding-left: 4rem;
+  padding-left: 2rem;
 }
 
 .view-more{
@@ -193,7 +190,6 @@ section h2, section h3 {
   text-align: center;
   width: 9rem;
   border-radius: 1rem;
-  margin-top:2.5rem;
   letter-spacing: 1px;
   color: var(--grey-100);
   font-size: 1.2rem;
