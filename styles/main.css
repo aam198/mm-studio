@@ -67,9 +67,13 @@ a:active {
   color: var(--teal);
 }
 
+img{
+  font-style: italic;
+}
+
 img, video {
   max-inline-size: 100%;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 /* a:visited {
