@@ -651,14 +651,19 @@ button:hover span::before, button:hover span::after{
 footer{
   margin-top: 2rem;
   width: 100%;
-  height: 16vh;
   padding-top: 2.5rem;
   padding-left: 2.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
 footer h3{
   font-size: 1.563rem;;
@@ -679,17 +684,22 @@ footer.blue{
 footer img{
   width:200px;
 }
-
+/* 
 footer span.contact{
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-family: var(--body-text);
   padding-left: 0.8rem;
-}
+} */
 
-footer ul{
-  color: var(--dark-blue-500);
-  list-style-type: none;
+footer ul.footer-navigation li{
+  margin: 0 0 0.5em;
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.8em;
+  display: inline-block;
+  padding: 0px 1em;
+  border-right: 1px solid #FFF;
+  list-style: none;
 }
 
 .footer-right{
