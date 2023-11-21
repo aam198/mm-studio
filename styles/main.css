@@ -674,9 +674,6 @@ footer.blue{
   gap: 0.625rem;
 }
 
-.wc-brand{
-  
-}
 
 .footer-text{
   width: 70%;
@@ -696,6 +693,11 @@ footer.blue p {
   padding-right: 3rem;
 }
 
+hr.lt-blue{
+  border-top: 1px solid var(--lt-blue);
+  width: 80%;
+}
+
 .footer-navigation{
   padding: 0;
   display: flex;
@@ -703,11 +705,11 @@ footer.blue p {
   align-items: center;
 }
 
-footer h3{
+/* footer h3{
   font-size: 1.563rem;
   margin-top: 0;
   margin-bottom: 0.2rem;
-}
+} */
 
 
 /* 
@@ -733,7 +735,7 @@ footer ul.footer-navigation li:last-child{
   border-right: none;
 }
 
-footer ul.footer-navigation li:hover{
+footer ul.footer-navigation li:hover, .footer-text a:hover{
   color: var(--lt-blue);
 }
 
