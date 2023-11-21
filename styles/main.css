@@ -633,7 +633,7 @@ button:hover span::before, button:hover span::after{
   /* For mobile phones: */
 
   section.hero{
-    margin: 0rem 2rem;
+    margin: 0.7rem 2rem;
   }
   button.btn-1 {
     bottom: 1rem;
