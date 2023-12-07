@@ -164,7 +164,7 @@ section h3.service-card-title {
   margin:0;
 }
 
-.video-text p, .design-text p{
+.service-card-text p {
   display: block;
   font-size: 1.2rem;
   line-height: 2.0625rem;
