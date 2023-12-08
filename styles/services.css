@@ -118,7 +118,7 @@ nav.explore-nav{
 
 .service-card{
   width: 90%;
-  max-width: 1400px;
+  max-width: 1100px;
   display: flex;
   justify-content: center;
   border: 1px solid #e2e8f0;
@@ -170,7 +170,7 @@ section h3.service-card-title {
   line-height: 2.0625rem;
 }
 
-.video-image img, .design-image img{
+.service-image img{
   max-width: 100%;
   border-radius: 18px;
   min-width: 500px;
@@ -181,7 +181,6 @@ section h3.service-card-title {
 }
 
 .design-text {
-  width: 40%;
   padding-left: 2rem;
 }
 
