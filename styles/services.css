@@ -124,10 +124,10 @@ nav.explore-nav{
   border: 1px solid #e2e8f0;
   border-radius: .5rem;
   padding: 1.75rem 1.875rem;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-.video-section, .design-section{
+section{
   padding-top: 2rem;
   position: relative;
   width: 100%;
@@ -160,8 +160,8 @@ section h3.service-card-title {
   justify-content: space-around;
 }
 
-.video-text h3, .design-text h3{
-  margin:0;
+.service-card-text h3{
+  margin: 0;
 }
 
 .service-card-text p {
@@ -180,9 +180,6 @@ section h3.service-card-title {
   padding-top: 5rem;
 }
 
-.design-text {
-  padding-left: 2rem;
-}
 
 .view-more{
   display: block;
