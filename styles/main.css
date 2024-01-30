@@ -129,8 +129,20 @@ span[class~="sr-only"] {
   z-index: 100;
 }
 
+.open-btn-dk-bg{
+  position: fixed;
+  top: 30px;
+  left: 50px;
+  z-index: 100;
+  color: var(--lt-blue);
+}
+
 .open-btn:hover{
   color: var(--dark-blue-500);
+}
+
+.open-btn-dk-bg:hover{
+  color: var(--med-blue);
 }
 
 .close-btn{
@@ -152,6 +164,7 @@ span[class~="sr-only"] {
   cursor: pointer;
   font-size: 1.6rem;
 }
+
 .nav {
   position: fixed;
   top: 0;
@@ -171,11 +184,7 @@ span[class~="sr-only"] {
 }
 
 .nav > .logo{ 
-  width: 10rem;
-}
-
-.text {
-  text-transform: uppercase;
+  width: 12rem;
 }
 
 .nav-purple{
@@ -220,6 +229,7 @@ span[class~="sr-only"] {
 
 .list li {
   margin: 1rem;
+  text-transform:uppercase;
 }
 
 .list li a{
