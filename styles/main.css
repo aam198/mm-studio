@@ -147,8 +147,8 @@ span[class~="sr-only"] {
 
 .close-btn{
   position: absolute;
-  top: 25px;
-  right: 30px;
+  top: 1rem;
+  right: 1.2rem;
   color: var(--med-blue);
   opacity: 0.7;
   transition: opacity 0.2s ease;
@@ -183,8 +183,9 @@ span[class~="sr-only"] {
   transform: translateX(0);
 }
 
-.nav > .logo{ 
+.nav-med-blue > .logo{ 
   width: 12rem;
+  padding-top: 1.2rem;
 }
 
 .nav-purple{
@@ -213,7 +214,7 @@ span[class~="sr-only"] {
 .nav-med-blue{
   background-color: var(--dark-blue-500);
   width: 95%;
-  padding: 2rem;
+  padding: 1.6rem;
   position: relative;
   transition-delay: 0s;
 }
@@ -224,7 +225,7 @@ span[class~="sr-only"] {
 
 .list {
   list-style-type: none;
-  padding: 0;
+  padding: 0.5rem 0 0 0;
 }
 
 .list li {
