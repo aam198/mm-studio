@@ -652,7 +652,11 @@ button:hover span::before, button:hover span::after{
     padding: 0.4rem 0.5rem;
   }
   .explore-button{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+  .weAre p {
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -682,8 +686,9 @@ footer.blue{
 
 .footer-text-logo{
   display: flex;
-  justify-content: space-around;
-  gap: 0.625rem;
+  flex-direction: column;
+  align-items:center;
+  gap: 0.8rem;
 }
 
 .footer-text-logo img{
