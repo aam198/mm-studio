@@ -667,13 +667,13 @@ button:hover span::before, button:hover span::after{
 footer{
   margin-top: 2rem;
   width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
+  padding: 3rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
 }
 
 /* Color of background */
+
 footer.grey{
   color: var(--dark-blue-500);
   background-color: var(--grey-100);
@@ -696,7 +696,7 @@ footer.blue{
 }
 
 .footer-text{
-  width: 70%;
+  width: 85%;
 }
 
 .footer-text p {
@@ -706,7 +706,7 @@ footer.blue{
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  padding-right: 3rem;
+  padding: 0 2rem;
 }
 
 hr.lt-blue{
@@ -715,10 +715,9 @@ hr.lt-blue{
 }
 
 .footer-navigation{
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 2rem;
+  margin: 0;
+  text-align: center;
 }
 
 footer ul.footer-navigation li{
