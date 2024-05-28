@@ -123,12 +123,12 @@ nav.explore-nav{
   justify-content: center;
   border: 1px solid #e2e8f0;
   border-radius: .5rem;
-  padding: 1.75rem 1.875rem;
+  padding: 1.75rem 2rem;
   gap: 2rem;
 }
 
 section{
-  padding-top: 2rem;
+  padding: 2rem 0 5rem 0;
   position: relative;
   width: 100%;
   display: flex;
@@ -175,10 +175,10 @@ section h3.service-card-title {
   border-radius: 18px;
   min-width: 500px;
 }
-
+/* 
 .design-section{
   padding-top: 5rem;
-}
+} */
 
 
 .view-more{
