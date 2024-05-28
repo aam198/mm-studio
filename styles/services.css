@@ -172,13 +172,9 @@ section h3.service-card-title {
 
 .service-image img{
   max-width: 100%;
-  border-radius: 18px;
+  border-radius: 1.8rem;
   min-width: 500px;
 }
-/* 
-.design-section{
-  padding-top: 5rem;
-} */
 
 
 .view-more{
