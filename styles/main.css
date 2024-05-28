@@ -695,7 +695,7 @@ footer.blue{
   display: flex;
   flex-direction: column;
   align-items:center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .footer-text-logo img{
