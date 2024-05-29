@@ -5,7 +5,8 @@
 :root{
   --grey-100: #EAECEF; 
   --grey-200: #dee2e6;
-  --lt-blue: #93bdea;
+  --lt-blue-100: #93bdea;
+  --lt-blue-200:#6981B5;
   --med-blue: #526fa7;  
   --dark-blue-300: #385876;
   --dark-blue-500: #1A3651;
@@ -130,22 +131,23 @@ span[class~="sr-only"] {
 
 .open-btn{
   position: fixed;
-  top: 30px;
-  left: 50px;
-  color: var(--med-blue);
+  top: 1.875rem;
+  left: 2.5rem;
+  color: var(--lt-blue-200);
   z-index: 100;
+  transition: color 200ms ease-in;
 }
 
 .open-btn-dk-bg{
   position: fixed;
-  top: 30px;
-  left: 50px;
+  top: 1.875rem;
+  left: 2.5rem;
   z-index: 100;
-  color: var(--lt-blue);
+  color: var(--lt-blue-100);
 }
 
 .open-btn:hover{
-  color: var(--dark-blue-500);
+  color: var(--med-blue);
 }
 
 .open-btn-dk-bg:hover{
@@ -156,7 +158,7 @@ span[class~="sr-only"] {
   position: absolute;
   top: 1rem;
   right: 1.2rem;
-  color: var(--med-blue);
+  color: var(--lt-blue-200);
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
@@ -717,7 +719,7 @@ footer.blue{
 }
 
 hr.lt-blue{
-  border-top: 1px solid var(--lt-blue);
+  border-top: 1px solid var(--lt-blue-100);
   width: 80%;
 }
 
@@ -743,7 +745,7 @@ footer ul.footer-navigation li:last-child{
 }
 
 .footer-text a:hover, footer ul.footer-navigation li:hover{
-  color: var(--lt-blue);
+  color: var(--lt-blue-100);
 }
 
 
