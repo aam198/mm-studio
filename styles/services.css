@@ -116,6 +116,15 @@ nav.explore-nav{
 
 /* Example with a border around each service  */
 
+section{
+  padding: 2rem 0 5rem 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .service-card{
   width: 100%;
   max-width: 1100px;
@@ -128,14 +137,10 @@ nav.explore-nav{
   margin: 1rem;
 }
 
-section{
-  padding: 2rem 0 5rem 0;
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.service-card.reverse{
+  flex-direction: row-reverse;
 }
+
 
 /* need for underline */
 section h3.service-card-title {
@@ -149,7 +154,7 @@ section h3.service-card-title {
   width: 100%;
   height: 5px;
   transform-origin: bottom;
-  background: var(--lt-blue);
+  background: var(--lt-blue-100);
   bottom: -8px;
   z-index: -1;
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));

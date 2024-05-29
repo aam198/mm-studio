@@ -117,7 +117,7 @@ nav.explore-nav{
   width: 20rem;
   height: 5px;
   transform-origin: bottom;
-  background: var(--lt-blue);
+  background: var(--lt-blue-100);
   bottom: -8px;
   z-index: -1;
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
