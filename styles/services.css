@@ -181,7 +181,7 @@ section h3.service-card-title {
 .service-image img{
   max-width: 100%;
   border-radius: 1.8rem;
-  min-width: 500px;
+  height: auto;
 }
 
 
