@@ -332,7 +332,7 @@ nav > ul > li:hover{
 }
 
 nav.dark-blue-500 > ul > li:hover{
-  color: var(--lt-blue);
+  color: var(--lt-blue-100);
 }
 
 nav svg.icon{
@@ -567,7 +567,7 @@ button.btn-1::before, button.btn-1::after {
   height: 4px;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--lt-blue);
+  background: var(--lt-blue-100);
 }
 
 .explore-button::before, .explore-button::after{
@@ -576,7 +576,7 @@ button.btn-1::before, button.btn-1::after {
   height: 0;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--lt-blue);
+  background: var(--lt-blue-100);
 }
 
 button:hover::before,
