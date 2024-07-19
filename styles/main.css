@@ -773,7 +773,6 @@ footer ul.footer-navigation li:last-child{
 }
 
 @media only screen and (max-width: 768px) {
-
   footer h3{
     font-size: calc(1.2rem + 0.5vw);
   }
@@ -781,6 +780,16 @@ footer ul.footer-navigation li:last-child{
     gap: 0.5rem;
   }
 }
+
+@media (prefers-reduced-motion) {
+  *, *::before, *::after {
+    animation-duration: 0s !important;
+    /* additional recommendation */
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 
 /* Testimonials Section */
