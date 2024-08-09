@@ -312,7 +312,7 @@ nav > ul > li, .nav-list-item{
   font-weight: 600;
   list-style-type: none;
   padding: 0.5rem;
-  margin: 1rem 0.7rem;
+  margin: 1rem 0.25rem;
   transition: transform .2s ease-in, color 0.3s ease-in;
   cursor: pointer;
 }
@@ -342,7 +342,6 @@ nav svg.icon{
   line-height: 100%;
   overflow: visible;
   display: inline-block;
-  margin-left: 5px;
   transition: all 0.3s ease-in;
 }
 
