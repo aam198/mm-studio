@@ -27,7 +27,7 @@ exploreArrow.addEventListener("mouseout", () => {
 
 
 // Mobile Navigation option based on viewport size
-const size = window.matchMedia("(min-width: 880px)");
+const size = window.matchMedia("(min-width: 925px)");
 // Checks for size when page is loaded
 winSize(size);
 
@@ -40,7 +40,7 @@ function winSize(size) {
   else{
     hamburgerNav.classList.remove('hidden');
     mainNav.classList.add('hidden');
-    console.log("Screen is less than 850px")
+    console.log("Screen is less than 925px")
   }
 }
 
@@ -49,12 +49,12 @@ window.addEventListener('resize', function() {
   if (size.matches){
     hamburgerNav.classList.add('hidden');
     mainNav.classList.remove('hidden');
-    console.log("Screen is wider than 725px");
+    console.log("Screen is wider than 925px");
   }
   else {
     hamburgerNav.classList.remove('hidden');
     mainNav.classList.add('hidden');
-    console.log("Screen is less than 725px");
+    console.log("Screen is less than 800px");
   }
 })
 
