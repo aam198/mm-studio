@@ -215,6 +215,29 @@ nav.explore-nav{
   width: 9rem;
 }
 
+/* Before and After Examples  */
+.before-after-container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.divider{
+  width: 10%;
+}
+
+h3.before-title{
+  color: var(--red);
+  font-size: inherit;
+}
+
+
+h3.after-title{
+  color: var(--green);
+  font-size: inherit;
+}
+
+
 /* TODO: Media Queries for Explore page */
 
 @media only screen and (max-width: 768px) {
