@@ -218,12 +218,24 @@ nav.explore-nav{
 /* Before and After Examples  */
 .before-after-container{
   display: flex;
-  width: 80%;
-  margin: 0 auto;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.before-image, .after-image{
+  width: 100%;
+  height: auto;
+  max-width: 450px;
 }
 
 .divider{
-  width: 10%;
+  display: inline-flex;
+  align-self: center;
+  border-left: 2px solid var(--grey-200);
+  height: 550px;
+  margin: 0 1rem;
+
 }
 
 h3.before-title{
