@@ -231,6 +231,19 @@ nav.explore-nav{
 }
 
 
+h3.before-title{
+  color: var(--red);
+  font-size: 1.563rem;
+}
+
+
+h3.after-title{
+  color: var(--green);
+  font-size: 1.563rem;
+}
+
+
+
 .before-image, .after-image{
   width: 100%;
   /* height: auto; */
@@ -246,16 +259,6 @@ nav.explore-nav{
 
 }
 
-h3.before-title{
-  color: var(--red);
-  font-size: inherit;
-}
-
-
-h3.after-title{
-  color: var(--green);
-  font-size: inherit;
-}
 
 
 /* TODO: Media Queries for Explore page */
