@@ -153,6 +153,21 @@ nav.explore-nav{
   overscroll-behavior-inline: contain;
 }
 
+.media-scroller-header{
+  width: 100%;
+  display:flex;
+  justify-content: end;
+}
+
+.media-scroller-icons{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.media-scroller-left{
+  
+}
+
 .media-element{
   --shadow-color: 220 40% 2%;
   --shadow-strength: 10%;
