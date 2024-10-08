@@ -163,12 +163,14 @@ nav.explore-nav{
   display: flex;
   gap: 0.5rem;
 }
-
+/* 
 .media-scroller-left{
   
-}
+} */
 
-.media-scroller-icon-right{
+.right{}
+
+.media-scroller-icon {
   background-color: rgb(255, 255, 255);
   border-color: rgb(173, 173, 182);
   color: rgb(42, 42, 51);
@@ -196,6 +198,23 @@ nav.explore-nav{
   justify-content: center;
   padding: 16px;
   border-radius: 50%;
+}
+
+.media-scroller-icon-right:after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 44px;
+  min-width: 44px;
+  width: 100%;
+  top: 50%;
+  margin-top: -22px;
+}
+
+.media-scroller-icon > .chevron-right{
+  display:block;
+  height: 16px;
+  width: 16px;
 }
 
 .media-element{
