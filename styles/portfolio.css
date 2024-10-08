@@ -168,6 +168,36 @@ nav.explore-nav{
   
 }
 
+.media-scroller-icon-right{
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(173, 173, 182);
+  color: rgb(42, 42, 51);
+  user-select: none;
+  margin: 0px;
+  appearance: none;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  pointer-events: auto;
+  outline: none;
+  box-shadow: none;
+  position: relative;
+  color: rgb(17, 17, 22);
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: none;
+  font-family: "Inter", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+}
+
 .media-element{
   --shadow-color: 220 40% 2%;
   --shadow-strength: 10%;
