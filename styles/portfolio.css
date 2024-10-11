@@ -211,8 +211,7 @@ nav.explore-nav{
   margin-top: -22px;
 }
 
-.media-scroller-icon > .chevron-right{
-  display:block;
+svg.chevron-right{
   height: 16px;
   width: 16px;
 }
