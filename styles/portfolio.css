@@ -168,24 +168,20 @@ nav.explore-nav{
   
 } */
 
-.right{}
 
 .media-scroller-icon {
   background-color: rgb(255, 255, 255);
   border-color: rgb(173, 173, 182);
   color: rgb(42, 42, 51);
-  user-select: none;
+}
+
+.media-scroller-icon {
+  cursor: pointer;
   margin: 0px;
-  appearance: none;
-  transition-property: background-color, border-color, color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease;
   pointer-events: auto;
   outline: none;
   box-shadow: none;
   position: relative;
-  color: rgb(17, 17, 22);
-  -moz-osx-font-smoothing: grayscale;
   text-transform: none;
   font-family: "Inter", "Adjusted Arial", Tahoma, Geneva, sans-serif;
   font-weight: 700;
@@ -198,9 +194,12 @@ nav.explore-nav{
   justify-content: center;
   padding: 16px;
   border-radius: 50%;
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
 }
 
-.media-scroller-icon-right:after{
+.media-scroller-icon:after{
   content: "";
   position: absolute;
   left: 0px;
