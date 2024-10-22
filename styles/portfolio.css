@@ -228,11 +228,17 @@ svg.chevron-left{
   object-fit: cover;
 }
 
+.media-element > iframe{
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+/* 
 .media-element > iframe {
   inline-size: 100%;
   aspect-ratio: 16 /9;
   object-fit: cover;
-}
+} */
 .media-element > iframe ~ p{
   margin:0;
 }
