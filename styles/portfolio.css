@@ -163,15 +163,10 @@ nav.explore-nav{
   display: flex;
   gap: 0.5rem;
 }
-/* 
-.media-scroller-left{
-  
-} */
 
 
 .media-scroller-icon {
   background-color: rgb(255, 255, 255);
-  border-color: rgb(173, 173, 182);
   color: rgb(42, 42, 51);
 }
 
@@ -179,40 +174,36 @@ nav.explore-nav{
   cursor: pointer;
   margin: 0px;
   pointer-events: auto;
-  outline: none;
-  box-shadow: none;
-  position: relative;
-  text-transform: none;
   font-family: "Inter", "Adjusted Arial", Tahoma, Geneva, sans-serif;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
   height: 36px;
   width: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
   border-radius: 50%;
+  border: 1px solid #ADADB6;
   transition-property: background-color, border-color, color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
-.media-scroller-icon:after{
-  content: "";
-  position: absolute;
-  left: 0px;
-  height: 44px;
-  min-width: 44px;
-  width: 100%;
-  top: 50%;
-  margin-top: -22px;
+.media-scroller-icon:hover{
+  background-color: rgb(238,238,240);
+  border-color:rgb(173,173,182);
+  color: rgb(42,42,51);
 }
 
 svg.chevron-right{
   height: 16px;
   width: 16px;
+  rotate: -90deg;
+}
+
+svg.chevron-left{
+  height: 16px;
+  width: 16px;
+  rotate: 90deg;
 }
 
 .media-element{
@@ -221,7 +212,7 @@ svg.chevron-right{
   display: grid;
   grid-template-rows: min-content;
   gap: var(--_spacer);
-  padding: var(--_spacer);
+  padding: 0 0 1rem 0;
   background: var(--dark-blue-500);
   color: var(--grey-100);
   border-radius: 5px;
@@ -239,14 +230,20 @@ svg.chevron-right{
 
 .media-element > iframe {
   inline-size: 100%;
+  aspect-ratio: 16 /9;
+  object-fit: cover;
 }
 .media-element > iframe ~ p{
   margin:0;
 }
 
+.media-element p{
+  padding-left: 1rem;
+}
+
 .media-element > .sub-title{
   font-size: 1.15rem;
-  padding-left: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 .snaps-inline{
