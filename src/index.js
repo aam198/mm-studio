@@ -86,7 +86,17 @@ const showIconsOneByOne = () => {
 showIconsOneByOne();
 
 
-// Media Scroller
+// Media Scroller Button Scroll Snap
+
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollContainer = document.querySelector('.media-scroller-container')
+  const scrollAmount = 220; // Amount to scroll each time the button is clicked, adjust as needed
+
+  // Button event listeners
+  
+})
+
+
 // import {rovingIndex} from "https://cdn.skypack.dev/roving-ux"
 
 // document.querySelectorAll('.horizontal-media-scroller')
