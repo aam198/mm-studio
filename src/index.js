@@ -93,6 +93,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const scrollAmount = 220; // Amount to scroll each time the button is clicked, adjust as needed
 
   // Button event listeners
+  const scrollLeftButton = document.querySelector('.media-scroller-icon .left');
+  const scrollRightButton = document.querySelector('.media-scroller-icon .right');
+
+  // Click Event for scrolling left
+  scrollLeftButton.addEventListener('click', function() {
+    scrollContainer.scrollBy({
+      left: -scrollAmount,
+      behavior: 'smooth' 
+    });
+  });
   
 })
 
