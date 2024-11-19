@@ -73,17 +73,17 @@ closeBtn.addEventListener('click', () => {
 
 // End of Mobile Navigation 
 
-const showIconsOneByOne = () => {
-  setTimeout(() => {
-    for (let i = 0; i < icons.length; i++){
-      setTimeout(() => {
-        icons[i].style.opacity='1';
-      }, 1000 * i);
-    }
-  }, 1000);
-};
+// const showIconsOneByOne = () => {
+//   setTimeout(() => {
+//     for (let i = 0; i < icons.length; i++){
+//       setTimeout(() => {
+//         icons[i].style.opacity='1';
+//       }, 1000 * i);
+//     }
+//   }, 1000);
+// };
 
-showIconsOneByOne();
+// showIconsOneByOne();
 
 
 // Media Scroller Button Scroll Snap
@@ -92,18 +92,23 @@ const scrollContainer = document.querySelector('.media-scroller');
 const scrollAmount = 220; // Amount to scroll each time the button is clicked, adjust as needed
 
 // Button event listeners
-const scrollLeftButton = document.querySelector('.media-scroller-icon .left');
-const scrollRightButton = document.querySelector('.media-scroller-icon .right');
+const scrollLeftButton = document.getElementById('scroll_left');
+const scrollRightButton = document.getElementById('scroll_right');
+
 
 // Click Event for scrolling left
-scrollLeftButton.addEventListener('click', function() {
+scrollLeftButton.addEventListener('click', () => {
+  console.log("Left clicked");
+
   scrollContainer.scrollBy({
     left: -scrollAmount,
     behavior: 'smooth' 
   });
 });
 
-scrollRightButton.addEventListener('click', function() {
+scrollRightButton.addEventListener('click', () => { 
+  console.log("Right clicked");
+
   scrollContainer.scrollBy({
     right: scrollAmount,
     behavior: 'smooth'
