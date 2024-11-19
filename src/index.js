@@ -88,23 +88,27 @@ showIconsOneByOne();
 
 // Media Scroller Button Scroll Snap
 
-document.addEventListener('DOMContentLoaded', function() {
-  const scrollContainer = document.querySelector('.media-scroller-container')
-  const scrollAmount = 220; // Amount to scroll each time the button is clicked, adjust as needed
+const scrollContainer = document.querySelector('.media-scroller');
+const scrollAmount = 220; // Amount to scroll each time the button is clicked, adjust as needed
 
-  // Button event listeners
-  const scrollLeftButton = document.querySelector('.media-scroller-icon .left');
-  const scrollRightButton = document.querySelector('.media-scroller-icon .right');
+// Button event listeners
+const scrollLeftButton = document.querySelector('.media-scroller-icon .left');
+const scrollRightButton = document.querySelector('.media-scroller-icon .right');
 
-  // Click Event for scrolling left
-  scrollLeftButton.addEventListener('click', function() {
-    scrollContainer.scrollBy({
-      left: -scrollAmount,
-      behavior: 'smooth' 
-    });
+// Click Event for scrolling left
+scrollLeftButton.addEventListener('click', function() {
+  scrollContainer.scrollBy({
+    left: -scrollAmount,
+    behavior: 'smooth' 
   });
-  
-})
+});
+
+scrollRightButton.addEventListener('click', function() {
+  scrollContainer.scrollBy({
+    right: scrollAmount,
+    behavior: 'smooth'
+  });
+});
 
 
 // import {rovingIndex} from "https://cdn.skypack.dev/roving-ux"
