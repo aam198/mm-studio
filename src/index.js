@@ -4,8 +4,7 @@ const mainNav = document.getElementById('main_nav');
 // Dropdown
 const exploreArrow = document.querySelector('.drop-down');
 const navDrop = document.querySelector('.nav-dropdown');
-//Icon Fade-in
-const icons = document.querySelectorAll('.icon-fade');
+
 
 
 
@@ -13,10 +12,10 @@ const icons = document.querySelectorAll('.icon-fade');
 const showThemeContainer = () => {
   navDrop.classList.add("visible");
 };
-
 const hideThemeContainer = () => {
   navDrop.classList.remove("visible");
-}
+};
+
 // Event listener for MouseOver/MouseOut
 exploreArrow.addEventListener("mouseover", () => {
     showThemeContainer();
@@ -42,7 +41,7 @@ function winSize(size) {
     mainNav.classList.add('hidden');
     console.log("Screen is less than 1024px")
   }
-}
+};
 
 // Updates classes when viewport is resized.
 window.addEventListener('resize', function() {
@@ -56,7 +55,7 @@ window.addEventListener('resize', function() {
     mainNav.classList.add('hidden');
     console.log("Screen is less than 1024px");
   }
-})
+});
 
 // Mobile Navigation open/close buttons
 const openBtn= document.querySelector('.open-btn');
@@ -73,18 +72,21 @@ closeBtn.addEventListener('click', () => {
 
 // End of Mobile Navigation 
 
-// TODO: fix showIcons
-// const showIconsOneByOne = () => {
-//   setTimeout(() => {
-//     for (let i = 0; i < icons.length; i++){
-//       setTimeout(() => {
-//         icons[i].style.opacity='1';
-//       }, 1000 * i);
-//     }
-//   }, 1000);
-// };
 
-// showIconsOneByOne();
+// Icon Fade-in
+const icons = document.querySelectorAll('.icon-fade'); 
+
+const showIconsOneByOne = () => {
+  setTimeout(() => {
+    for (let i = 0; i < icons.length; i++){
+      setTimeout(() => {
+        icons[i].style.opacity='1';
+      }, 1000 * i);
+    }
+  }, 1000);
+};
+
+showIconsOneByOne();
 
 
 // window.onload = (event) => {
