@@ -222,6 +222,7 @@ svg.chevron-left{
   max-width: 615px;
   min-width: 615px;
   z-index:1;
+  overflow:hidden;
 }
 
 .media-element > img {
