@@ -100,6 +100,11 @@ nav.explore-nav{
   transition: opacity 1s ease-in-out;
 }
 
+section{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 #video-section{
   margin-top: 4rem;
   margin-left: 2rem;
@@ -128,9 +133,6 @@ nav.explore-nav{
   padding-top: 1.8rem;
 }
 
-.video-example img{
-  border-radius: 18px;
-}
 
 .video-section p{
   font-size: 1.2rem;
@@ -151,6 +153,10 @@ nav.explore-nav{
   padding: var(--_spacer);
   overflow-x: auto;
   overscroll-behavior-inline: contain;
+}
+
+.media-scroller-title{
+  margin: 1rem;
 }
 
 .media-scroller-header{
