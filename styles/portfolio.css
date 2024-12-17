@@ -237,6 +237,7 @@ svg.chevron-left{
   object-fit: cover;
 }
 
+/* TODO: Find out more of iframes and border-radius on card */
 .media-element > iframe{
   object-fit: contain;
   width: 100%;
