@@ -285,8 +285,6 @@ nav{
   padding-right: 1rem;
 }
 
-
-
 nav .logo{
   margin-left: 2rem;
   padding: 0;
@@ -651,26 +649,6 @@ button:hover span::before, button:hover span::after{
   color: var(--dark-blue-500);
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-
-  section.hero{
-    margin: 0.7rem 2rem;
-  }
-  button.btn-1 {
-    bottom: 1rem;
-    margin-right: 1rem;
-    padding: 0.4rem 0.5rem;
-  }
-  .explore-button{
-    font-size: 1.4rem;
-  }
-  .weAre p {
-    font-size: 1.6rem;
-    margin-right: 1.5rem;
-  }
-}
-
 /* Main page styling end */
 
 
@@ -763,8 +741,29 @@ footer ul.footer-navigation li:last-child{
 
 /* Media Queries */
 
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  section.hero{
+    margin: 0.7rem 2rem;
+  }
+  button.btn-1 {
+    bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.4rem 0.5rem;
+  }
+  .explore-button{
+    font-size: 1.4rem;
+  }
+  .weAre p {
+    font-size: 1.6rem;
+    margin-right: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 850px){
-  header a{
+  #main_nav a{
     display: flex;
     justify-content: center;
   }
