@@ -10,6 +10,7 @@
   --med-blue: #526fa7;  
   --dark-blue-300: #385876;
   --dark-blue-500: #1A3651;
+  --teal-100:#77D4C5;
   --teal: #45C4B0;
   --green: #317B22;
   --purple: #955695;
@@ -133,7 +134,7 @@ span[class~="sr-only"] {
   position: fixed;
   top: 1.875rem;
   left: 2.5rem;
-  color: var(--lt-blue-200);
+  color: var(--lt-blue-100);
   z-index: 100;
   transition: color 200ms ease-in;
 }
@@ -158,13 +159,14 @@ span[class~="sr-only"] {
   position: absolute;
   top: 1rem;
   right: 1.2rem;
-  color: var(--lt-blue-200);
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  color: var(--lt-blue-100);
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .close-btn:hover{
   opacity: 1;
+  transform: scale(1.2);
 }
 
 .nav-btn{
@@ -242,18 +244,23 @@ span[class~="sr-only"] {
   text-transform:uppercase;
 }
 
-.list li a{
-  display:block;
-  color: #f8f9fa;
-  opacity: 0.9;
-  font-size: 1.2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .list ul {
   list-style-type: none;
   padding-left: 1.2rem;
+}
+
+.list li a{
+  display:block;
+  color: #f8f9fa;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform .2s ease-in, color 0.3s ease-in;
+}
+
+.list li a:hover{
+  transform: scale(1.1);
+  color: var(--teal-100);
 }
 
 /* End Mobile Nav */
@@ -325,7 +332,6 @@ nav.dark-blue-500{
 nav.dark-blue-500 > ul > li{
   color: var(--grey-100);
 }
-
 
 nav > ul > li:hover{
   transform: scale(1.2);
