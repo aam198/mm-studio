@@ -388,7 +388,7 @@ h3.after-title{
 
 /* TODO: Media Queries for Explore page */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 815px) {
   /* For mobile phones: */
   .top-blue{
     height: 30rem;

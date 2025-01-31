@@ -143,8 +143,8 @@ span[class~="sr-only"] {
 
 .open-btn-dk-bg{
   position: fixed;
-  top: 1.875rem;
-  left: 2.5rem;
+  top: 1.8rem;
+  left: 2rem;
   z-index: 100;
   color: var(--lt-blue-100);
   transition: color 0.3s ease-in-out;
