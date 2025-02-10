@@ -176,7 +176,7 @@ span[class~="sr-only"] {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .nav {
@@ -242,14 +242,14 @@ span[class~="sr-only"] {
   padding: 0.5rem 0 0 0;
 }
 
-.list li {
-  margin: 1rem;
-  text-transform:uppercase;
-}
-
 .list ul {
   list-style-type: none;
   padding-left: 1.2rem;
+}
+
+.list li {
+  margin: 1rem;
+  text-transform:uppercase;
 }
 
 .list li a{
@@ -258,11 +258,12 @@ span[class~="sr-only"] {
   font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform .2s ease-in, color 0.3s ease-in;
+  transition: transform .2s ease-in-out, color 0.3s ease-in-out;
 }
 
 .list li a:hover{
-  transform: scale(1.1);
+  transform: scale(1.2) translate(5%);
+  transform-origin: center;
   color: var(--teal-100);
 }
 
