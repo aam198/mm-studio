@@ -134,7 +134,7 @@ span[class~="sr-only"] {
 
 .open-btn{
   position: fixed;
-  top: 1.875rem;
+  top: 1.8rem;
   left: 2.5rem;
   color: var(--med-blue);
   z-index: 100;
@@ -143,6 +143,7 @@ span[class~="sr-only"] {
 
 .open-btn-dk-bg{
   position: fixed;
+  mixed-blend-mode:difference;
   top: 1.8rem;
   left: 2rem;
   z-index: 100;
@@ -267,7 +268,7 @@ span[class~="sr-only"] {
   color: var(--teal-100);
 }
 
-/* End Mobile Nav */
+/* End Mobile Nav Styling */
 
 /* Main Navigation  */
 
