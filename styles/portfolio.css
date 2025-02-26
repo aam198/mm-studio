@@ -323,14 +323,18 @@ svg.chevron-left{
   display: flex;
   justify-content: center;
   gap: 1rem;
-  width: 100%;
 }
 
 .before-section, .after-section{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 500px;
+}
+
+.before-section img, .after-section img{
+  width: 100%;
+  height: auto;
 }
 
 
@@ -338,14 +342,15 @@ svg.chevron-left{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
 }
 
-.before-section-horizontal{
-  width:30%;
+.before-section-horizontal img, .after-section-horizontal img{
+  width:100%;
+  height: auto;
+  display:block;
 }
-.after-section-horizontal{
-  width: 45%;
-}
+
 
 h3.before-title{
   color: var(--red);
@@ -359,13 +364,12 @@ h3.after-title{
 }
 
 
-
+/* 
 .before-image, .after-image{
   width: 100%;
   /* height: auto; */
-  max-width: 85%;
-  
-}
+  /* max-width: 85%; */
+/* } */
 
 /* TODO:adjust size and padding */
 
