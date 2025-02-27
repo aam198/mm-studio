@@ -128,6 +128,11 @@ span[class~="sr-only"] {
   padding: 0;
   margin: -1px;
 }
+
+section{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 /* End of General Styling */
 
 /* Mobile Nav */
