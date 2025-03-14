@@ -307,9 +307,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
+  padding: 2rem 1rem;
 }
 
 nav .logo{
