@@ -70,6 +70,24 @@ closeBtn.addEventListener('click', () => {
   navs.forEach(nav => nav.classList.remove('visible'))
 });
 
+// Update color of hamburger
+
+window.addEventListener("scroll", function () {
+  const targetDiv = document.getElementById("video-section");
+  // const hamburger = document.getElementById("hamburger_nav");
+
+  if (window.scrollY > targetDiv.offsetTop - 50) {
+    console.log("change back to lighter blue");
+    targetDiv.classList.add("scrolled");
+  } else {
+    console.log("Change to dark blue");
+    targetDiv.classList.remove("scrolled");
+  }
+});
+
+
+
+
 // End of Mobile Navigation 
 
 
