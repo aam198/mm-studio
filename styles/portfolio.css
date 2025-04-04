@@ -219,11 +219,11 @@ svg.chevron-left{
   width: 100%;
   aspect-ratio: 16 /9;
   /* min-height: 100%; */
-  border-radius: 16px;
-  /* border-bottom-left-radius: 8px;
+
+  border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 16px; */
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 
@@ -234,21 +234,22 @@ svg.chevron-left{
   &::before {    
     content: "";
     position: absolute;
-    inset: 5px;
+    inset: 10px;
     z-index: -1;
     background: #000;
     filter: blur(10px);
-    opacity: .75;
+    opacity: .50;
   }
-
   iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    clip-path: inset(0% 0% 0% 0% round 10px);
+    /* TODO: mess with this more */
+    /* clip-path: inset(0% 0% 0% 0% round 10px); */
   }
+
 }
 
 
