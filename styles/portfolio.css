@@ -11,6 +11,11 @@ nav.explore-nav{
   /* box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5); */
 }
 
+.intro-top-blue{
+  margin: 0;
+  padding: 0;
+}
+
 .top-blue {
   box-shadow: 0 0 0.3rem rgb(76, 66, 76, 0.5);
   /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
