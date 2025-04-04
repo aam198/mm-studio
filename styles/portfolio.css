@@ -85,16 +85,15 @@ nav.explore-nav{
   transition: opacity 1s ease-in-out;
 }
 
-.video-section{
+.services section:not(:first-of-type) {
   margin-top: 4rem;
-  position: relative;
 }
 
 .services h2 {
   position: relative;
 }
 
-.video-section h2::before, .design-section h2::before{
+section h2::before{
   content: "";
   position: absolute;
   width: 20rem;
@@ -110,7 +109,6 @@ nav.explore-nav{
   position:relative;
   padding-top: 1.8rem;
 }
-
 
 .video-section p{
   font-size: 1.2rem;
