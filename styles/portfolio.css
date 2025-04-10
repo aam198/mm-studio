@@ -146,7 +146,6 @@ section h2::before{
   gap: 0.5rem;
 }
 
-
 .media-scroller-icon {
   background-color: rgb(255, 255, 255);
   color: rgb(42, 42, 51);
@@ -204,7 +203,6 @@ svg.chevron-left{
   max-width: 615px;
   min-width: 615px;
   z-index:10;
-  overflow:hidden;
 }
 
 .media-element > img {
@@ -213,23 +211,10 @@ svg.chevron-left{
   object-fit: cover;
 }
 
-/* TODO: Find out more of iframes and border-radius on card */
-.media-element > iframe{
-  object-fit: contain;
-  width: 100%;
-  aspect-ratio: 16 /9;
-  /* min-height: 100%; */
-
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-
-
 .iframe-wrapper {
   position: relative;
   aspect-ratio: 16 / 9;
+  object-fit:contain;
 
   &::before {    
     content: "";
@@ -246,25 +231,20 @@ svg.chevron-left{
     left: 0;
     width: 100%;
     height: 100%;
-    /* TODO: mess with this more */
-    /* clip-path: inset(0% 0% 0% 0% round 10px); */
+    clip-path: inset(0% 0% 0% 0% round 10px);
   }
-
 }
 
-
-.media-element > iframe ~ p{
-  margin:0;
-}
-
-.media-element p{
-  padding-left: 1rem;
-  margin: 0;
-}
-
-.media-element > .sub-title{
-  font-size: 1.15rem;
+.media-element .title{
   padding-left: 1.5rem;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.media-element .sub-title{
+  font-size: 1.15rem;
+  padding-left: 2.5rem;
+  margin: 0;
 }
 
 .snaps-inline{
