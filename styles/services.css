@@ -117,8 +117,10 @@ nav.explore-nav{
 /* Example with a border around each service  */
 
 section{
-  padding: 2rem 0 5rem 0;
+  width: 85%;
+  margin: 0 auto;
   position: relative;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +134,7 @@ section{
   flex-flow: row wrap;
   border: 1px solid #e2e8f0;
   border-radius: .5rem;
-  padding: 2rem 2.5rem;
+  padding: 3rem;
   gap: 2rem;
   margin: 1rem;
 }
@@ -140,7 +142,6 @@ section{
 .service-card.reverse{
   flex-direction: row-reverse;
 }
-
 
 /* need for underline */
 section h3.service-card-title {
@@ -155,7 +156,7 @@ section h3.service-card-title {
   height: 5px;
   transform-origin: bottom;
   background: var(--lt-blue-100);
-  bottom: -8px;
+  bottom: -12px;
   z-index: -1;
   transform: skew(-20deg) rotate(var(--rotate)) scaleX(var(--scaleX));
 }
@@ -172,8 +173,6 @@ section h3.service-card-title {
 }
 
 .service-card-text p {
-  display: block;
-  font-size: 1.2rem;
   line-height: 1.8rem;
   padding: 1rem 0;
 }
