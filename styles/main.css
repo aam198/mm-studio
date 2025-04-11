@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
 @import url("https://use.typekit.net/oio2onf.css");
 
 /* General */
 :root{
+  --lt-grey: #fafafa;
   --grey-100: #EAECEF; 
   --grey-200: #dee2e6;
   --lt-blue: #c9def5;
@@ -43,6 +45,7 @@ html {
 
 body{
   font-size: 1.2rem;
+  background-color: var(--lt-grey);
   /* font-size: calc(1rem + 0.8vw);  */
   font-family: var(--body-text);
   margin: 0;
@@ -63,6 +66,14 @@ h1 {font-size: 3.052rem;}
 h2 {font-size: 2.441rem;}
 h3 {font-size: 1.953rem;}
 h4 {font-size: 1.563rem;}
+
+p{
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 1rem 0;
+  letter-spacing: 0.1px;
+}
 
 a {
   cursor: pointer;
@@ -97,7 +108,7 @@ a:focus {
 }
 
 body.main{
-  background-color: var(--grey-100);
+  background-color: var(--lt-grey);
   position: relative;
 }
 
@@ -302,7 +313,6 @@ header .wc-logo{
 }
 
 nav{
-  background-color: var(--grey-100);
   display: flex;
   justify-content: space-between;
   align-items: center;

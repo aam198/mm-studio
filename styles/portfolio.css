@@ -110,10 +110,6 @@ section h2::before{
   padding-top: 1.8rem;
 }
 
-.video-section p{
-  font-size: 1.2rem;
-}
-
 
 /* Media Scroller */
 
@@ -266,6 +262,10 @@ svg.chevron-left{
 }
 
 /* End Media Scroller */
+
+.section-intro-content{
+  margin: 0 4rem;
+}
 
 .design-section{
   padding-top: 1.5rem;
