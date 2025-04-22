@@ -189,7 +189,7 @@ svg.chevron-left{
   display: grid;
   grid-template-rows: min-content;
   /* grid-auto-columns: 100%; */
-  gap: var(--_spacer);
+  /* gap: var(--_spacer); */
   margin: 0 0 0.5rem 0;
   padding: 0 0 1.7rem 0;
   background: var(--dark-blue-500);
@@ -232,14 +232,16 @@ svg.chevron-left{
 }
 
 .media-element .title{
-  padding-left: 1.5rem;
+  padding: 0.8rem 2rem 0.2rem;
   margin: 0;
-  margin-top: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
 }
 
 .media-element .sub-title{
   font-size: 1.15rem;
-  padding-left: 2.5rem;
+  padding: 0 0 0 2.5rem;
   margin: 0;
 }
 
