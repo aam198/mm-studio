@@ -90,14 +90,21 @@ nav.explore-nav{
   margin-top: 4rem;
 }
 
+.section-intro-content{
+  width:85%;
+  margin: 0 auto;
+}
+
 .services h2 {
   position: relative;
+  width: max-content;
+  margin: 1.5rem auto;
 }
 
 section h2::before{
   content: "";
   position: absolute;
-  width: 20rem;
+  width: 100%;
   height: 5px;
   transform-origin: bottom;
   background: var(--lt-blue-100);
@@ -271,13 +278,6 @@ svg.chevron-left{
   margin: 0 auto;
 }
 
-.design-section{
-  padding-top: 1.5rem;
-}
-
-.design-section h2::before{
-  width: 9rem;
-}
 
 /* Before and After Examples  */
 .before-after-container{
