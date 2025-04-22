@@ -20,7 +20,7 @@ nav.explore-nav{
   box-shadow: 0 0 0.3rem rgb(76, 66, 76, 0.5);
   /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 100px)); */
   background-color: var(--dark-blue-500);
-  height: 32rem;
+  height: 28rem;
   width: 100%;
   position: relative;
   z-index: -100;
@@ -56,11 +56,12 @@ nav.explore-nav{
 .icon-style-container{
   width: 100%;
   position: absolute;
-  bottom: 5rem;
+  bottom: 4rem;
   z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom:1rem;
 }
 
 .icon-style-container::after{
