@@ -10,11 +10,12 @@ section{
 .blog-articles-container{
   display:grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
-  padding: 2.5rem 4rem;
+  padding: 2.5rem 3rem;
   /* margin-left:auto;
   margin-right: auto; */
-  gap: 2.5rem;
-  /* max-width: 1280px; */
+  gap: 2rem;
+  max-width: 1280px;
+  width:100%;
 }
 
 .blog-article-card{
@@ -75,24 +76,36 @@ section{
 
 /* Media Queries for Grid Layout*/
 
-@media (max-width: 1084px){
+@media screen and (max-width: 1084px){
   .blog-articles-container{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
+    padding: 2.5rem 1rem;
   }
 }
 
-@media (max-width: 768px){
+
+@media screen and (max-width: 975px){
   .blog-articles-container{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .blog-articles-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+    padding: 1rem;
   }
 }
 
 
-@media (max-width: 640px){
+@media screen and (max-width: 640px){
   .blog-articles-container{
     grid-template-columns: repeat(1, minmax(0, 1fr));
     width: 100%;
+    padding: 1rem;
   }
 }
