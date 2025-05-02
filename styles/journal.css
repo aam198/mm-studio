@@ -1,7 +1,6 @@
 section{
   padding: 2rem 0 5rem 0;
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,11 +10,11 @@ section{
 .blog-articles-container{
   display:grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
-  padding: 2.5rem 6rem;
-  margin-left:auto;
-  margin-right: auto;
+  padding: 2.5rem 4rem;
+  /* margin-left:auto;
+  margin-right: auto; */
   gap: 2.5rem;
-  max-width: 1280px;
+  /* max-width: 1280px; */
 }
 
 .blog-article-card{
@@ -72,4 +71,28 @@ section{
   width: 1rem;
   fill: currentColor;
   margin-right: .5rem;
+}
+
+/* Media Queries for Grid Layout*/
+
+@media (max-width: 1084px){
+  .blog-articles-container{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .blog-articles-container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 640px){
+  .blog-articles-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+  }
 }
