@@ -836,42 +836,42 @@ footer ul.footer-navigation li:last-child{
   background-color: var(--grey-200);
   border-radius: 1rem;
   margin: 1.2rem auto;
-  padding: 5rem 8rem;
+  padding: 2.2rem 4rem;
   max-width: 80vh;
   position: relative;
-  box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
+  box-shadow: 0 0 0.1rem rgb(76, 66, 76, 0.5);
 }
 
 .fa-quote{
   color: rgba(26,54,81, 0.6);
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   position: absolute;
-  top: 70px;
+  top: 50px;
 }
 
 .fa-quote-right{
-  left: 40px;
+  left: 30px;
 }
 
 .fa-quote-left{
-  right: 40px;
+  right: 30px;
 }
 
 .testimonial{
-  line-height: 2.8rem;
+  line-height: 1.6;
   text-align: justify;
+  padding: 1rem 0.5rem;
 }
 
 .user{
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .user .user-image{
   border-radius: 50%;
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 5.5rem;
+  width: 5.5rem;
   object-fit: cover;
 }
 
@@ -881,18 +881,19 @@ footer ul.footer-navigation li:last-child{
 
 .user .username{
   margin: 1rem;
+  font-size: 1.2rem;
 }
 
 .user .role {
   font-weight: normal;
   margin: 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 
 .progress-bar {
   background-color:var(--teal);
-  height: 4px;
+  height: 3px;
   width: 100%;
   /* Box will change every 10 sec */
   animation: grow 10s linear infinite;
