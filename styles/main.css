@@ -471,21 +471,29 @@ nav svg.icon{
 
 /* Navigation Style End */
 
+.home{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Hero Carousel */
-section.hero{
+.hero{
   position:relative;
   background-color: var(--grey-100);
   color: var(--dark-blue-500);
-  margin: 0.7rem 6rem;
-  height: 700px;
+  margin: 0.7rem;
+  width: 85%;
+  max-width: 900px;
+  height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  align-self: center;
   box-shadow:
   12.5px 12.5px 17.2px -38px rgba(0, 0, 0, 0.025),
   100px 100px 137px -38px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 
 /* Main page Title-section Styling */
