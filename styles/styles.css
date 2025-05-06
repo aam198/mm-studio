@@ -669,8 +669,9 @@ button:hover span::before, button:hover span::after{
 }
 
 .explore-button svg {
-  margin-left: 0.8em;
+  margin-left: 0.8rem;
   color: var(--dark-blue-500);
+  rotate: 90deg;
 }
 
 .animation{
@@ -685,6 +686,7 @@ button:hover span::before, button:hover span::after{
   width:100%;
   display:flex;
   justify-content: end;
+  margin: 0;
 }
 
 .weAre p {
