@@ -664,13 +664,17 @@ button:hover span::before, button:hover span::after{
   padding: 0.3rem;
 }
 
+.explore-button svg {
+  margin-left: 0.8rem;
+  color: var(--dark-blue-500);
+  transition: all .2s linear;
+}
+
 .explore-button:hover{
   transform: scale(1.2);
 }
 
-.explore-button svg {
-  margin-left: 0.8rem;
-  color: var(--dark-blue-500);
+.explore-button:hover svg{
   rotate: 90deg;
 }
 
