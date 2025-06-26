@@ -116,7 +116,7 @@ nav.explore-nav{
 
 /* Example with a border around each service  */
 
-section{
+.service-section{
   width: 85%;
   margin: 0 auto;
   position: relative;

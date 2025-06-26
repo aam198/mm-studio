@@ -6,74 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MM Studio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
-  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body class="main">
-  <!-- Mobile Nav -->
-  <div id="hamburger_nav" class="hidden">
-    <button class="nav-btn open-btn">
+  <header>
+    <!-- Mobile Nav -->
+  <div id="hamburger_nav" class="hidden" aria-label="Mobile menu">
+    <button class="mobile-nav-open-btn open-btn">
       <i class="fas fa-bars"></i>
     </button>
   </div>
+
   <div class="nav nav-purple">
     <div class="nav nav-teal">
       <div class="nav nav-med-blue">
         <button class="nav-btn close-btn">
           <i class="fas fa-times"></i>
         </button>
-        <img src="./assets/images/logo.svg" alt="Logo" class="logo">
-        
+        <a class="mobile-logo" href="#">
+          <img src="/assets/images/WCLD_white.png" alt="Logo" class="logo">
+        </a>
         <ul class="list">
-          <li><a href="#">EXPLORE</a></li>
+          <li><a href="pages/services.html">What we do</a></li>
+          <li><a href="pages/portfolio.html">Portfolio</a></li>
           <li>
             <ul>
-              <li><a href="#">Video & Audio</a></li>
-              <li><a href="#">Visual Design</a></li>
-              <li><a href="#">Interactives</a></li>
-              <li><a href="#">Immersive</a></li>
+              <li><a href="pages/portfolio.html#video">Video & Audio</a></li>
+              <li><a href="pages/portfolio.html#design">Visual Design</a></li>
+              <li><a href="pages/portfolio.html#interactive">Interactive Content</a></li>
             </ul>
           </li>
-          <li><a href="#">TRENDS/EXPERIMENTAL</a></li>
-          <li>
-            <ul>
-              <li><a href="#">Visual Design</a></li>
-              <li><a href="#">360/Poser</a></li>
-            </ul>
-          </li>
-          <li><a href="#">ABOUT</a></li>
-          <li>
-            <ul>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </li>
-          <li><a href="#">RESOURCES</a></li>
+          <li><a href="/pages/journal.html">Journal</a></li>
+          <li><a href="/pages/resources.html">Resources</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
   <!-- End Mobile Nav -->
 
-  <nav id="main_nav">
-    <div class="logo"></div>
-    <ul>
-      <li tabindex="0"><a href="pages/services.html">Services</a></li>
-      <li class="drop-down" tabindex="0" ><a href="pages/portfolio.html">Portfolio <span class="animate less"><svg  aria-hidden="true" tabindex="-1" role="presentation" class="animation icon icon-arrow-down down-arrow" viewBox="0 0 32 32"><path fill="#EAECEF" d="M26.985,8.5l1.516,1.617L16.001,23.5l-12.5-13.383L5.009,8.5l10.992,11.758L26.985,8.5z"></path></svg></span></a>
-        <div class="nav-dropdown">
-          <ul>
-            <li><a href="pages/portfolio.html#video">Video & Audio</a></li>
-            <li><a href="pages/portfolio.html#design">Visual Design</a></li>
-            <li><a href="pages/portfolio.html#interactive">Interactive</a></li>
-            <li><a href="pages/portfolio.html#immersive">Immersive</a></li>
-          </ul>
-        </div>
-      </li>
-      <li tabindex="0"><a href="pages/resources.html">Resources</a></li>
-      <li class="drop-down-two" tabindex="0"><a href="./pages/about.html">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
+  <nav id="main_nav" class="main-nav">
+    <div class="logo">
+      <a href="#"><img src="/assets/images/WCLD.png" alt="WCLD MM studio" /></a>
+    </div>
+      <ul>
+        <li class="nav-list-item"><a href="pages/services.html">What We Do</a></li>
+        <li class="drop-down nav-list-item"><a href="pages/portfolio.html">Portfolio <span class="animate less"><svg  aria-hidden="true" tabindex="-1" role="presentation" class="animation icon icon-arrow-down down-arrow" viewBox="0 0 32 32"><path fill="#1A3651" d="M26.985,8.5l1.516,1.617L16.001,23.5l-12.5-13.383L5.009,8.5l10.992,11.758L26.985,8.5z"></path></svg></span></a>
+          <div class="nav-dropdown" tabindex="0">
+            <ul>
+              <li><a href="pages/portfolio.html#video">Video & Audio</a></li>
+              <li><a href="pages/portfolio.html#design">Visual Design</a></li>
+              <li><a href="pages/portfolio.html#interactive">Interactive</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list-item"><a href="pages/journal.html">Journal</a></li>
+        <li class="nav-list-item"><a href="pages/resources.html">Resources</a></li>
+        <li class="nav-list-item"><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home">
     <section class="hero">
       <div class="carousel-container" id="carousel-imgs" role="region" aria-label="carousel">
         <img class="carousel-img" src="https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW8lMjBzaG9vdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt="video shoot scene in a library" role="group" aria-roledescription="slide" aria-labelledby="carousel_item-1" >
@@ -101,21 +96,39 @@
       </svg>
       </span></a></button>
     </section>
+    <section class="weAre">
+      <p class="right">"...we create amazing content."</p>
+    </section>
   </main>
 
-  <footer class="grey">
-    <div class="footer-left">
-      <h3>Connect with our MM Team: </h3><span class="contact">@MMEmail</span>
+<!-- FOOTER -->
+
+  <footer class="blue">
+    <!-- Logo -->
+    <div class="footer-text-logo">
+      <a href="#" tabindex="0" class="wc-brand">
+        <img src="/assets/images/PSU_Logo_white.svg" alt="Penn State World Campus Logo" />
+      </a>
+
+      <div class="footer-text">
+        <p>Penn State World Campus is committed to making its websites accessible to all users, and welcomes comments or suggestions on access improvements. Please send comments or suggestions on accessibility to <a href="mailto:accessibility@outreach.psu.edu">accessibility@outreach.psu.edu</a>.</p>
+      </div>
     </div>
-    <div class="footer-right">
-      <h3 class="menu">Menu</h3>
-      <ul class="menu-nav">
-        <li><a href="./pages/explore.html">Explore</a></li>
-        <li><a href="./pages/trends.html">Trends</a></li>
-        <li><a href="./pages/about.html">About</a></li>
-        <li><a href="./pages/resources.html">Resources</a></li>
-      </ul>
-    </div>
+    <hr class="lt-blue">
+    <ul class="footer-navigation box">
+      <li><a href="http://www.psu.edu/web-privacy-statement">Privacy</a></li>
+      <li>
+        <a href="http://guru.psu.edu/policies/AD85.html">Non-discrimination</a>
+      </li>
+      <li>
+        <a href="http://guru.psu.edu/policies/OHR/hr11.html">Equal Opportunity</a>
+      </li>
+      <li>
+        <a href="http://www.psu.edu/copyright-information">Copyright</a>
+      </li>
+      <li>
+        <a href="http://www.psu.edu/" target="_blank">The Pennsylvania State University © <script type="text/javascript">today=new Date(); y0=today.getFullYear();document.write(y0);</script></a></li>
+    </ul>
   </footer>
 
   <script src="../src/index.js"></script>
