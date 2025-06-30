@@ -2,8 +2,9 @@
   --responsive-font-size-primary: min(1.8rem, max(0.5rem, 5vmin));
 }
 
-h2.main-title{
+.service-section-title{
   font-size: 3rem;
+  margin:3.6rem 0rem 1rem;
 }
 
 .box-shadow-right{

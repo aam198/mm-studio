@@ -482,9 +482,9 @@ nav svg.icon{
   background-color: var(--grey-100);
   color: var(--dark-blue-500);
   margin: 0.7rem;
-  width: 85%;
+  width: 100%;
   max-width: 900px;
-  height: 60vh;
+  height: 68vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -693,8 +693,9 @@ button:hover span::before, button:hover span::after{
   margin: 0;
 }
 
-.weAre p {
-  font-size: 2.2rem;
+.weAre p.right{
+  font-size: 2.0rem;
+  margin: 0.5rem 3.6rem 0.5rem 0;
   margin-right: 3.6rem;
   color: var(--dark-blue-500);
 }
@@ -796,7 +797,8 @@ footer ul.footer-navigation li:last-child{
   /* For mobile phones: */
 
   section.hero{
-    margin: 0.7rem 2rem;
+    margin: 1rem 2rem;
+    width: 95%;
   }
   button.btn-1 {
     bottom: 1rem;
@@ -806,9 +808,9 @@ footer ul.footer-navigation li:last-child{
   .explore-button{
     font-size: 1.4rem;
   }
-  .weAre p {
+  .weAre p.right {
     font-size: 1.6rem;
-    margin-right: 1.5rem;
+    margin: 0.5rem 1.5rem;
   }
 }
 
