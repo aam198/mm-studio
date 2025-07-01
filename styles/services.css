@@ -135,7 +135,7 @@ nav.explore-nav{
   border: 1px solid #e2e8f0;
   border-radius: .5rem;
   padding: 2.4rem;
-  gap: 2rem;
+  gap: 1.8rem;
   margin: 1rem 0;
 }
 
@@ -166,6 +166,7 @@ section h3.service-card-title {
   flex-direction: column;
   justify-content: space-around;
   flex: 1;
+  flex-basis: 375px;
 }
 
 .service-card-text h3{
