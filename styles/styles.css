@@ -719,7 +719,7 @@ footer.grey{
   background-color: var(--grey-100);
 }
 
-footer.blue{
+footer.dark-blue-500{
   color: var(--grey-100);
   background-color: var(--dark-blue-500);
 }

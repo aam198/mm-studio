@@ -118,7 +118,6 @@ nav.explore-nav{
 /* Example with a border around each service  */
 
 .service-section{
-  width: 85%;
   margin: 0 auto;
   position: relative;
   padding: 2rem 0;
@@ -128,7 +127,7 @@ nav.explore-nav{
 }
 
 .service-card{
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   justify-content: center;
@@ -137,7 +136,7 @@ nav.explore-nav{
   border-radius: .5rem;
   padding: 2.4rem;
   gap: 2rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .service-card.reverse{
