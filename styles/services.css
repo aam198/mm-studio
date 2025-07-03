@@ -216,7 +216,7 @@ a.view-more:hover{
   /* background-image: linear-gradient(90deg, rgba(147,189,234,1) 0%, rgba(82,111,167,1) 59%); */
 }
 
-@media (min-width: 768px) and (max-width: 1022px) {
+@media (min-width: 768px) and (max-width: 1050px) {
   .service-card{
     display:flex;
   }
