@@ -476,6 +476,11 @@ nav svg.icon{
   flex-direction: column;
 }
 
+.hero-section{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Hero Carousel */
 .hero{
   position:relative;
