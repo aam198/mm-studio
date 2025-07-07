@@ -479,6 +479,7 @@ nav svg.icon{
 .hero-section{
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 /* Hero Carousel */
@@ -710,7 +711,6 @@ button:hover span::before, button:hover span::after{
 
 /* Footer Section */
 footer{
-  margin-top: 2rem;
   width: 100%;
   padding: 3rem 1rem 1.5rem;
   display: flex;
