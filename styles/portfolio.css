@@ -118,7 +118,6 @@ section h2::before{
   padding-top: 1.8rem;
 }
 
-
 /* Media Scroller */
 
 .media-scroller{
@@ -261,7 +260,6 @@ svg.chevron-left{
 .snaps-inline > * {
   scroll-snap-align: start;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   scroll-behavior: smooth;
