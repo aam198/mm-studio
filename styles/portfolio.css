@@ -344,7 +344,7 @@ h3.after-title{
   margin-right: 1.5rem;
 }
 
-/* TODO: Media Queries for Explore page */
+/* TODO: Media Queries for Portfolio */
 
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
@@ -372,4 +372,4 @@ h3.after-title{
 
 }
 
-/* Services page styling end */
+/* Portfolio page styling end */
