@@ -291,6 +291,10 @@ svg.chevron-left{
   height: auto;
 }
 
+.horizontal-image-container{
+  display:flex;
+  flex-direction: column;
+}
 
 .before-section-horizontal, .after-section-horizontal{
   display: flex;
@@ -332,7 +336,7 @@ h3.after-title{
   align-self: center;
   border-left: 2px solid var(--grey-200);
   height: 550px;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .divider-horizontal{
@@ -343,6 +347,12 @@ h3.after-title{
   margin: 0 1rem;
 }
 
+/* More Examples Button */
+.more-examples{
+  width: 11rem;
+  margin-top: 1rem;
+  align-self: flex-end;
+}
 
 /* TODO: Media Queries for Explore page */
 
