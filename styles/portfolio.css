@@ -321,7 +321,7 @@ h3.after-title{
   font-size: 1.563rem;
 }
 
-
+/* TODO:adjust size and padding */
 /* 
 .before-image, .after-image{
   width: 100%;
@@ -329,29 +329,19 @@ h3.after-title{
   /* max-width: 85%; */
 /* } */
 
-/* TODO:adjust size and padding */
-
 .divider{
-  display: inline-flex;
-  align-self: center;
   border-left: 2px solid var(--grey-200);
-  height: 550px;
-  margin: 0 0.5rem;
+  height: auto;
+  margin: 0 0.8rem;
 }
 
-.divider-horizontal{
-  display: inline-flex;
-  align-self: center;
-  border-left: 2px solid var(--grey-200);
-  height: 350px;
-  margin: 0 1rem;
-}
 
 /* More Examples Button */
 .more-examples{
+  align-self: flex-end;
   width: 11rem;
   margin-top: 1rem;
-  align-self: flex-end;
+  margin-right: 1.5rem;
 }
 
 /* TODO: Media Queries for Explore page */
