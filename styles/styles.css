@@ -7,9 +7,11 @@
   --lt-grey: #fafafa;
   --grey-100: #EAECEF; 
   --grey-200: #dee2e6;
+  --grey-300: #f5f8fa;
   --lt-blue: #c9def5;
-  --lt-blue-100: #93bdea;
-  --lt-blue-200:#6981B5;
+  --lt-blue-100: #e5effa;
+  --lt-blue-200: #93bdea;
+  --lt-blue-300:#6981B5;
   --med-blue: #526fa7;  
   --med-blue-100:#758cb9;
   --dark-blue-300: #385876;
@@ -180,7 +182,7 @@ section{
   top: 1.8rem;
   left: 2rem;
   z-index: 100;
-  color: var(--lt-blue-100);
+  color: var(--lt-blue-200);
   transition: color 0.3s ease-in-out;
 }
 /* 
@@ -196,7 +198,7 @@ section{
   position: absolute;
   top: 1rem;
   right: 1.2rem;
-  color: var(--lt-blue-100);
+  color: var(--lt-blue-200);
   opacity: 0.8;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -369,7 +371,7 @@ nav > ul > li:hover{
 }
 
 nav.dark-blue-500 > ul > li:hover{
-  color: var(--lt-blue-100);
+  color: var(--lt-blue-200);
 }
 
 nav svg.icon{
@@ -617,7 +619,7 @@ button.btn-1::before, button.btn-1::after {
   height: 4px;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--lt-blue-100);
+  background: var(--lt-blue-200);
 }
 
 .explore-button::before, .explore-button::after{
@@ -626,7 +628,7 @@ button.btn-1::before, button.btn-1::after {
   height: 0;
   position: absolute;
   transition: all 0.2s linear;
-  background: var(--lt-blue-100);
+  background: var(--lt-blue-200);
 }
 
 button:hover::before,
@@ -755,7 +757,7 @@ footer.dark-blue-500{
 }
 
 hr.lt-blue{
-  border-top: 1px solid var(--lt-blue-100);
+  border-top: 1px solid var(--lt-blue-200);
   width: 80%;
 }
 
@@ -781,7 +783,7 @@ footer ul.footer-navigation li:last-child{
 }
 
 .footer-text a:hover, footer ul.footer-navigation li:hover{
-  color: var(--lt-blue-100);
+  color: var(--lt-blue-200);
 }
 
 
