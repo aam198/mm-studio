@@ -116,6 +116,7 @@ section h2::before{
 .video-example{
   position:relative;
   padding-top: 1.8rem;
+  overflow-x:hidden;
 }
 
 /* Media Scroller */
