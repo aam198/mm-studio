@@ -4,12 +4,14 @@
 
 /* General */
 :root{
+  --white: #ffffff;
   --lt-grey: #fafafa;
   --grey-100: #EAECEF; 
   --grey-200: #dee2e6;
   --grey-300: #f5f8fa;
-  --lt-blue: #c9def5;
-  --lt-blue-100: #e5effa;
+  --blue-100: #deeaf8;
+  --lt-blue: #e5effa;
+  --lt-blue-100: #c9def5;
   --lt-blue-200: #93bdea;
   --lt-blue-300:#6981B5;
   --med-blue: #526fa7;  
@@ -106,7 +108,7 @@ img, video {
 } */
 
 a:focus {
-  border-bottom: #fff;
+  border-bottom: var(--white);
 }
 
 body.main{
@@ -191,7 +193,7 @@ section{
 } */
 
 .open-btn-dk-bg:hover{
-  color: var(--lt-blue);
+  color: var(--lt-blue-100);
 }
 
 .close-btn{
@@ -416,7 +418,7 @@ nav svg.icon{
   left:0;
   top: 2.5rem;
   border-radius: 0.25em;
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--dark-blue-500);
   box-shadow: 0 0 0.5rem rgb(76, 66, 76, 0.5);
   width: 10rem;
