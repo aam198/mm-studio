@@ -4,7 +4,7 @@
 
 .service-section-title{
   font-size: 3rem;
-  margin:3.6rem 0rem 1rem;
+  margin:3rem 0rem 1rem;
   padding-top:1rem;
 }
 
@@ -118,7 +118,7 @@ nav.explore-nav{
 
 .services-info{
   margin:0;
-  background-color: var(--lt-blue-100);
+  background-color: var(--lt-blue);
   padding-bottom: 2rem;
 }
 
@@ -182,10 +182,14 @@ section h3.service-card-title {
   padding: 1rem 0;
 }
 
-.service-image img{
+.service-image-container{
+  display:flex;
+}
+
+.service-image-container img{
   max-width: 100%;
   border-radius: 1.8rem;
-  height: auto;
+  /* height: auto; */
 }
 
 
