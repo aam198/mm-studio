@@ -295,7 +295,7 @@ svg.chevron-left{
 
 .before-section img, .after-section img{
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .horizontal-image-container{
@@ -320,12 +320,14 @@ svg.chevron-left{
 h3.before-title{
   color: var(--red);
   font-size: 1.563rem;
+  margin: 0.5rem 0 1.2rem;
 }
 
 
 h3.after-title{
   color: var(--green);
   font-size: 1.563rem;
+  margin: 0.5rem 0 1.2rem;
 }
 
 /* TODO:adjust size and padding */
