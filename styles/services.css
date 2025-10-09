@@ -180,6 +180,7 @@ section h3.service-card-title {
 .service-card-text p {
   line-height: 1.8rem;
   padding: 1rem 0;
+  text-wrap: pretty;
 }
 
 .service-image-container{
